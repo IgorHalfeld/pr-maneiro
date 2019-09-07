@@ -11,26 +11,7 @@
   const templateElement = $('#template');
   const buttonCopy = $('#buttonCopy');
 
-  const persons = {
-    ney: {
-      name: 'Neymar Jr',
-      username: 'neymarjr',
-      msg: 'Seu PR é TOP!!',
-      image: 'https://i.imgur.com/axhwTtW.jpg',
-    },
-    yudi: {
-      name: 'Yudi Tamashiro',
-      username: 'yuditamashiro',
-      msg: 'Melhor que esse PR só um pleisteixu 2',
-      image: 'https://i.imgur.com/QKWi84I.jpg',
-    },
-    rod: {
-      name: 'Ronaldinho Gaúcho',
-      username: '10Ronaldinho',
-      msg: 'Esse PR é aleatório d+ até pros meus padrões',
-      image: 'https://i.imgur.com/D2YmPkl.jpg',
-    },
-  };
+  const persons = window.Persons;
 
   let template = persons.ney;
 
