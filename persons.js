@@ -35,4 +35,10 @@ window.Persons = {
     msg: 'Esse PR precisa ser mergeado. Democraticamente',
     image: 'https://i.imgur.com/L3FkANj.jpg',
   },
+  faustao: {
+    name: 'Faustão',
+    username: 'faustao',
+    msg: 'Esse PR ai é fera meu!',
+    image: 'https://i.imgur.com/KScvaAy.jpg'
+  },
 };
