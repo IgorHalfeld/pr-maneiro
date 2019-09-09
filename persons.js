@@ -35,4 +35,10 @@ window.Persons = {
     msg: 'Esse PR precisa ser mergeado. Democraticamente',
     image: 'https://i.imgur.com/L3FkANj.jpg',
   },
+  vampeta: {
+    name: 'Vampeta',
+    username: 'vampeta',
+    msg: 'Você finge que coda e eu finjo que aprovo',
+    image: 'https://i.imgur.com/6F0yvRD.jpg',
+  },
 };
