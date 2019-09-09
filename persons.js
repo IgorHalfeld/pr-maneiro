@@ -37,7 +37,7 @@ window.Persons = {
   },
   faustao: {
     name: 'Faustão',
-    username: '',
+    username: 'faustao',
     msg: 'Esse PR ai é fera meu!',
     image: 'https://i.imgur.com/KScvaAy.jpg'
   },
