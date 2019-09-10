@@ -9,7 +9,6 @@ Faça alguém feliz com um comentário no PR!
 
 ### Como instalar
 
-Clone esse repositório e instale nas extenções do chrome, exemplo abaixo:
+Clone esse repositório e instale nas extensões do chrome, exemplo abaixo:
 
 ![demo 2](assets/demo-2.gif)
-
