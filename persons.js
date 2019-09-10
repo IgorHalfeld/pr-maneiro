@@ -41,4 +41,10 @@ window.Persons = {
     msg: 'Esse PR ai é fera meu!',
     image: 'https://i.imgur.com/KScvaAy.jpg'
   },
+  marilia: {
+    name: 'Marília Gabriela',
+    username: 'MGabrielaReal',
+    msg: 'Poór que você fez isso?',
+    image: 'https://i.imgur.com/bRPRe0T.jpg'
+  },
 };
