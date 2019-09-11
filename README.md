@@ -7,6 +7,20 @@ Faça alguém feliz com um comentário no PR!
 
 ![demo 1](assets/demo-1.gif)
 
+### Templates já disponíveis
+
+- Neymar Jr
+- Yudi Tamashiro
+- Ronaldinho Gaúcho
+- Jair M. Bolsonaro
+- Dilma Rousseff
+- Marina Silva
+- Vampeta
+- Faustão
+- Marília Gabriela
+- Arnaldo Cezar Coelho
+- Jailson Mendes
+
 ### Como instalar
 
 Clone esse repositório e instale nas extensões do chrome, exemplo abaixo:
