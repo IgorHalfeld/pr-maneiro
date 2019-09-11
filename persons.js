@@ -39,18 +39,24 @@ window.Persons = {
     name: 'Faustão',
     username: 'faustao',
     msg: 'Esse PR ai é fera meu!',
-    image: 'https://i.imgur.com/KScvaAy.jpg'
+    image: 'https://i.imgur.com/KScvaAy.jpg',
   },
   marilia: {
     name: 'Marília Gabriela',
     username: 'MGabrielaReal',
     msg: 'Poór que você fez isso?',
-    image: 'https://i.imgur.com/bRPRe0T.jpg'
+    image: 'https://i.imgur.com/bRPRe0T.jpg',
   },
   arnaldo: {
     name: 'Arnaldo Cezar Coelho',
     username: 'coelhoarnaldoc',
     msg: 'A regra é clara!',
-    image: 'https://i.imgur.com/x4ZJO0Y.jpg'
+    image: 'https://i.imgur.com/x4ZJO0Y.jpg',
+  },
+  jailson: {
+    name: 'Jailson Mendes',
+    username: 'JailsonMReal',
+    msg: 'Ai que delícia de PR, cara!',
+    image: 'https://i.imgur.com/FsMjQT0.jpg',
   },
 };
