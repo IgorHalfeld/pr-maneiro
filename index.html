@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PR Maneiro</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PR Maneiro</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="w-100 d-flex flex-column">
+          <label class="field-label">Coloque o tweet 😍</label>
+          <textarea id="tweetValue" class="field-textarea"></textarea>
+        </div>
 
-<body>
+        <div class="w-100 d-flex flex-column" style="margin-top: 16px">
+          <label class="field-label">Template</label>
+          <select class="w-100 form-select" id="template">
+            <option value="ney" selected>Neymar Jr</option>
+            <option value="yudi">Yudi Tamashiro</option>
+            <option value="rod">Ronaldinho Gaúcho</option>
+            <option value="jair">Jair M. Bolsonaro</option>
+            <option value="dilma">Dilma Rousseff</option>
+            <option value="marina">Marina Silva</option>
+            <option value="vampeta">Vampeta</option>
+            <option value="faustao">Faustão</option>
+            <option value="marilia">Marília Gabriela</option>
+            <option value="arnaldo">Arnaldo Cezar Coelho</option>
+            <option value="jailson">Jailson Mendes</option>
+          </select>
+        </div>
 
-  <div class="container">
-    <div>
-      <div class="w-100 d-flex flex-column">
-        <label class="field-label">Coloque o tweet 😍</label>
-        <textarea id="tweetValue" class="field-textarea"></textarea>
+        <div class="w-100" style="margin-top: 16px">
+          <label class="field-label">Preview</label>
+          <div class="preview" id="preview"></div>
+        </div>
+
+        <button class="w-100 btn-summit" id="buttonCopy" type="button">Baixar!</button>
       </div>
-
-      <div class="w-100 d-flex flex-column" style="margin-top: 16px">
-        <label class="field-label">Template</label>
-        <select class="w-100 form-select" id="template">
-          <option value="ney" selected>Neymar Jr</option>
-          <option value="yudi">Yudi Tamashiro</option>
-          <option value="rod">Ronaldinho Gaúcho</option>
-          <option value="jair">Jair M. Bolsonaro</option>
-          <option value="dilma">Dilma Rousseff</option>
-          <option value="marina">Marina Silva</option>
-          <option value="faustao">Faustão</option>
-          <option value="marilia">Marília Gabriela</option>
-          <option value="arnaldo">Arnaldo Cezar Coelho</option>
-          <option value="jailson">Jailson Mendes</option>
-        </select>
-      </div>
-
-      <div class="w-100" style="margin-top: 16px">
-        <label class="field-label">Preview</label>
-        <div class="preview" id="preview"></div>
-      </div>
-
-      <button class="w-100 btn-summit" id="buttonCopy" type="button">Baixar!</button>
     </div>
-  </div>
 
-  <script src="libs/dom-to-image.min.js"></script>
-  <script src="persons.js"></script>
-  <script src="app.js"></script>
-</body>
-
+    <script src="libs/dom-to-image.min.js"></script>
+    <script src="persons.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
