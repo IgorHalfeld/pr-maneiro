@@ -41,4 +41,10 @@ window.Persons = {
     msg: 'Esse PR ai é fera meu!',
     image: 'https://i.imgur.com/KScvaAy.jpg'
   },
+  arnaldo: {
+    name: 'Arnaldo Cezar Coelho',
+    username: 'coelhoarnaldoc',
+    msg: 'A regra é clara!',
+    image: 'https://i.imgur.com/x4ZJO0Y.jpg'
+  },
 };
