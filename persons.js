@@ -65,4 +65,10 @@ window.Persons = {
     msg: 'Ai que delícia de PR, cara!',
     image: 'https://i.imgur.com/FsMjQT0.jpg',
   },
+  charlie: {
+    name: 'Charlie Brown .Js',
+    username: 'charliebrownie.js',
+    msg: 'O PR vai voltar... iêee 🎶',
+    image: 'https://i.imgur.com/KZugqhH.png',
+  },
 };
