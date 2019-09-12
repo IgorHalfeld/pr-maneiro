@@ -76,5 +76,11 @@ window.Persons = {
     username: 'bambamoficial',
     msg: 'O PR tá saindo da jaula p***a!!',
     image: 'https://i.imgur.com/jYMjLjU.jpg'
+  },
+  maike: {
+    name: 'Maike da Swat',
+    username: 'maikeswat',
+    msg: 'Esse PR ta uma baguncinha',
+    image: 'https://i.imgur.com/IcVwzsJ.jpg'
   }
 };

@@ -21,6 +21,7 @@ Faça alguém feliz com um comentário no PR!
 - Arnaldo Cezar Coelho
 - Jailson Mendes
 - Kléber Bambam
+- Maike da S.W.A.T
 
 ### Como instalar
 
