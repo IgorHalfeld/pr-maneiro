@@ -20,6 +20,7 @@ Faça alguém feliz com um comentário no PR!
 - Marília Gabriela
 - Arnaldo Cezar Coelho
 - Jailson Mendes
+- Kléber Bambam
 
 ### Como instalar
 
