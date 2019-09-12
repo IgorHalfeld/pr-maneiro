@@ -71,4 +71,10 @@ window.Persons = {
     msg: 'O PR vai voltar... iêee 🎶',
     image: 'https://i.imgur.com/KZugqhH.png',
   },
+  bambam: {
+    name: 'Kléber Bambam',
+    username: 'bambamoficial',
+    msg: 'O PR tá saindo da jaula p***a!!',
+    image: 'https://i.imgur.com/jYMjLjU.jpg'
+  }
 };
