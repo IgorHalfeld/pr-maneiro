@@ -20,6 +20,7 @@ Faça alguém feliz com um comentário no PR!
 - Marília Gabriela
 - Arnaldo Cezar Coelho
 - Jailson Mendes
+- Charlie Brown Jr
 - Kléber Bambam
 - Maike da S.W.A.T
 

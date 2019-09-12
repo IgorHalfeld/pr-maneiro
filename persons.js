@@ -66,8 +66,8 @@ window.Persons = {
     image: 'https://i.imgur.com/FsMjQT0.jpg',
   },
   charlie: {
-    name: 'Charlie Brown .Js',
-    username: 'charliebrownie.js',
+    name: 'Charlie Brown Jr',
+    username: 'charliebrownjr',
     msg: 'O PR vai voltar... iêee 🎶',
     image: 'https://i.imgur.com/KZugqhH.png',
   },
