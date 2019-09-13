@@ -23,6 +23,7 @@ Faça alguém feliz com um comentário no PR!
 - Charlie Brown Jr
 - Kléber Bambam
 - Maike da S.W.A.T
+- Mano Brown
 
 ### Como instalar
 
