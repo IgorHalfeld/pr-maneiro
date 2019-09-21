@@ -82,5 +82,11 @@ window.Persons = {
     username: 'maikeswat',
     msg: 'Esse PR ta uma baguncinha',
     image: 'https://i.imgur.com/IcVwzsJ.jpg'
+  },
+  mano: {
+    name: 'Mano Brown',
+    username: 'manobrownof',
+    msg: 'Esse PR ta pampa, irmão!',
+    image: 'https://i.imgur.com/32HadJ1.png'
   }
 };
