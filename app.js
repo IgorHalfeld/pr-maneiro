@@ -41,7 +41,7 @@
 
   const handleCopy = async () => {
     const dataUrl = await domtoimage.toBlob($('#preview'), { quality: 0.95 });
-    const item = new ClipboardItem({ "image/png": dataUrl });
+    const item = new ClipboardItem({ 'image/png': dataUrl });
     navigator.clipboard.write([item]);  
   }
 
