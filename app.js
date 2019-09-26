@@ -10,6 +10,7 @@
   const tweetValue = $('#tweetValue');
   const templateElement = $('#template');
   const buttonCopy = $('#buttonCopy');
+  const buttonDownload = $('#buttonDownload');
 
   const persons = window.Persons;
 
@@ -20,6 +21,12 @@
     replaceValues();
   };
   let dataUrl;
+
+  const checkCopyFeature = () => {
+    if(!navigator.clipboard || !navigator.clipboard.write || typeof ClipboardItem === 'undefined' ){
+      buttonCopy.remove();
+    }
+  };
   const replaceValues = (event) => {
     const defaultValue = template.msg;
     const value = !!event && event.target.value.length ? event.target.value : defaultValue;
@@ -32,6 +39,12 @@
     target.innerHTML = tweetComplete;
   };
 
+  const handleCopy = async () => {
+    const dataUrl = await domtoimage.toBlob($('#preview'), { quality: 0.95 });
+    const item = new ClipboardItem({ "image/png": dataUrl });
+    navigator.clipboard.write([item]);  
+  }
+
   const handleDownload = async () => {
     const dataUrl = await domtoimage.toPng($('#preview'), { quality: 0.95 });
     const link = document.createElement('a');
@@ -40,8 +53,10 @@
     link.click();
   }
 
-  buttonCopy.addEventListener('click', handleDownload);
+  buttonCopy.addEventListener('click', handleCopy);
+  buttonDownload.addEventListener('click', handleDownload);
   templateElement.addEventListener('change', selectTemplate);
   tweetValue.addEventListener('keyup', replaceValues);
   replaceValues();
+  checkCopyFeature();
 })()
