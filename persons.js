@@ -88,5 +88,11 @@ window.Persons = {
     username: 'manobrownof',
     msg: 'Esse PR ta pampa, irmão!',
     image: 'https://i.imgur.com/32HadJ1.png'
+  },
+  zoio: {
+    name: 'Everson Zoio',
+    username: 'eversonZoio',
+    msg: 'Sobe esse PR na marretaaaaaaa!!',
+    image: 'https://i.imgur.com/m9f3J9u.jpg'
   }
 };
