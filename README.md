@@ -24,6 +24,7 @@ Faça alguém feliz com um comentário no PR!
 - Kléber Bambam
 - Maike da S.W.A.T
 - Mano Brown
+- Everson Zóio
 
 ### Como instalar
 
