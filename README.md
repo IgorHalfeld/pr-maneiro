@@ -1,6 +1,7 @@
 <img style="" src="icon.png" width="80" />
 
-### PR Maneiro 👍🏻  
+### PR Maneiro 👍🏻
+
 Faça alguém feliz com um comentário no PR!
 
 ### Como funciona
@@ -9,22 +10,22 @@ Faça alguém feliz com um comentário no PR!
 
 ### Templates já disponíveis
 
-- Neymar Jr
-- Yudi Tamashiro
-- Ronaldinho Gaúcho
-- Jair M. Bolsonaro
-- Dilma Rousseff
-- Marina Silva
-- Vampeta
-- Faustão
-- Marília Gabriela
 - Arnaldo Cezar Coelho
-- Jailson Mendes
 - Charlie Brown Jr
+- Everson Zóio
+- Dilma Rousseff
+- Faustão
+- Jair M. Bolsonaro
+- Jailson Mendes
 - Kléber Bambam
 - Maike da S.W.A.T
 - Mano Brown
-- Everson Zóio
+- Marina Silva
+- Marília Gabriela
+- Neymar Jr
+- Ronaldinho Gaúcho
+- Vampeta
+- Yudi Tamashiro
 
 ### Como instalar
 
