@@ -20,12 +20,14 @@ Faça alguém feliz com um comentário no PR!
 - Kléber Bambam
 - Maike da S.W.A.T
 - Mano Brown
+- Everson Zóio
 - Marina Silva
 - Marília Gabriela
 - Neymar Jr
 - Ronaldinho Gaúcho
 - Vampeta
 - Yudi Tamashiro
+- Zeca Pagodinho
 
 ### Como instalar
 
