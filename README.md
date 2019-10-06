@@ -1,6 +1,7 @@
 <img style="" src="icon.png" width="80" />
 
-### PR Maneiro 👍🏻  
+### PR Maneiro 👍🏻
+
 Faça alguém feliz com um comentário no PR!
 
 ### Como funciona
@@ -25,6 +26,7 @@ Faça alguém feliz com um comentário no PR!
 - Maike da S.W.A.T
 - Mano Brown
 - Everson Zóio
+- Zeca Pagodinho
 
 ### Como instalar
 
