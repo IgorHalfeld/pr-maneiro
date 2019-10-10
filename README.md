@@ -28,6 +28,7 @@ Faça alguém feliz com um comentário no PR!
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
+- Um Pistoleiro chamado Papaco
 
 ### Como instalar
 
