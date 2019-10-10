@@ -100,5 +100,11 @@ window.Persons = {
     username: 'zecaPagodinho',
     msg: 'Descobri que contribuo demais!!',
     image: 'https://i.imgur.com/Qr4FC4g.jpg'
+  },
+  papaco: {
+    name: 'Pistoleiro Papaco',
+    username: 'papacoranger',
+    msg: 'Pooraaaaa, tudo isso?!',
+    image: 'https://i.imgur.com/jVYlqdZ.jpg'
   }
 };
