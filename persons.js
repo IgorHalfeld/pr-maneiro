@@ -106,5 +106,11 @@ window.Persons = {
     username: 'papacoranger',
     msg: 'Pooraaaaa, tudo isso?!',
     image: 'https://i.imgur.com/jVYlqdZ.jpg'
+  },
+  gil: {
+    name: 'Gil Brother',
+    username: 'GilBrotherAway',
+    msg: 'Num guenta deiz minuto de code review cumigo, morô?. Iai vaincará?',
+    image: 'https://i.imgur.com/Vtw4TLp.jpg'
   }
 };
