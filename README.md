@@ -12,23 +12,24 @@ Faça alguém feliz com um comentário no PR!
 
 - Arnaldo Cezar Coelho
 - Charlie Brown Jr
-- Everson Zóio
 - Dilma Rousseff
+- Everson Zóio
+- Everson Zóio
 - Faustão
-- Jair M. Bolsonaro
+- Gil Brother
 - Jailson Mendes
+- Jair M. Bolsonaro
 - Kléber Bambam
 - Maike da S.W.A.T
 - Mano Brown
-- Everson Zóio
 - Marina Silva
 - Marília Gabriela
 - Neymar Jr
 - Ronaldinho Gaúcho
+- Um Pistoleiro chamado Papaco
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
-- Um Pistoleiro chamado Papaco
 
 ### Como instalar
 
