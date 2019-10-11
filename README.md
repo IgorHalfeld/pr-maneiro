@@ -14,7 +14,6 @@ Faça alguém feliz com um comentário no PR!
 - Charlie Brown Jr
 - Dilma Rousseff
 - Everson Zóio
-- Everson Zóio
 - Faustão
 - Gil Brother
 - Jailson Mendes
