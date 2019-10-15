@@ -11,6 +11,7 @@ Faça alguém feliz com um comentário no PR!
 ### Templates já disponíveis
 
 - Arnaldo Cezar Coelho
+- Cabo Daciolo
 - Charlie Brown Jr
 - Dilma Rousseff
 - Everson Zóio
