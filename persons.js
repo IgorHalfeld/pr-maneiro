@@ -112,5 +112,11 @@ window.Persons = {
     username: 'GilBrotherAway',
     msg: 'Num guenta deiz minuto de code review cumigo, morô?. Iai vaincará?',
     image: 'https://i.imgur.com/Vtw4TLp.jpg'
+  },
+  daciolo: {
+    name: 'Deputado Cabo Daciolo',
+    username: 'CaboDaciolo',
+    msg: 'Glória a Deuxx!',
+    image: 'https://i.imgur.com/rgc6e2A.jpg'
   }
 };
