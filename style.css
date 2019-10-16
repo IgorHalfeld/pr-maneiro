@@ -28,7 +28,7 @@ body {
 }
 .field-textarea {
   margin-top: 8px;
-  height: 130px;
+  height: 85px;
   border: 1px solid var(--color-grey);
   padding: 5px;
   font-size: 15px;
