@@ -5,6 +5,24 @@ window.Persons = {
     msg: 'Seu PR é TOP!!',
     image: 'https://i.imgur.com/axhwTtW.jpg'
   },
+  chaves: {
+    name: 'chaves',
+    username: 'chaves',
+    msg: 'Que burro dá zero no PR',
+    image: 'https://img.huffingtonpost.com/asset/5d726f5f240000fb1777c53b.jpeg?ops=scalefit_630_noupscale'
+  },
+  professor: {
+    name: 'professor',
+    username: 'professor',
+    msg: 'E o PR Ó',
+    image: 'http://s01.video.glbimg.com/270x169/2724660.jpg'
+  },
+  rossi: {
+    name: 'rossi',
+    username: 'rossi',
+    msg: 'Não diga a Deus o tamanho do seu PR.',
+    image: 'https://pleno.news/wp-content/uploads/2018/03/Padre-Marcelo-Rossi-e1520854893727-1024x701.jpg'
+  },
   yudi: {
     name: 'Yudi Tamashiro',
     username: 'yuditamashiro',
