@@ -12,6 +12,7 @@ Faça alguém feliz com um comentário no PR!
 
 - Arnaldo Cezar Coelho
 - Cabo Daciolo
+- Carlos Bolsonaro
 - Charlie Brown Jr
 - Dilma Rousseff
 - Everson Zóio
@@ -30,7 +31,6 @@ Faça alguém feliz com um comentário no PR!
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
-- Carlos Bolsonaro
 
 ### Como instalar
 
