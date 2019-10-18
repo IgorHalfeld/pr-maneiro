@@ -124,5 +124,11 @@ window.Persons = {
     username: 'dileraoficial',
     msg: 'Tey! Quetinhu!',
     image: 'https://i.imgur.com/eG5KnvT.png'
+  },
+  dilera: {
+    name: 'Dilera',
+    username: 'dileraoficial',
+    msg: 'O Burro! Brincadeira. Burro',
+    image: 'https://i.imgur.com/eG5KnvT.png'
   }
 };
