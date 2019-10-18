@@ -118,5 +118,11 @@ window.Persons = {
     username: 'CaboDaciolo',
     msg: 'Glória a Deuxx!',
     image: 'https://i.imgur.com/rgc6e2A.jpg'
+  },
+  pecesiqueira: {
+    name: 'PC Siqueira',
+    username: 'PCSiqueira',
+    msg: 'Mas poxa vida, que PR da hora!',
+    image: 'https://i.imgur.com/Ywih160.jpg'
   }
 };
