@@ -118,5 +118,12 @@ window.Persons = {
     username: 'CaboDaciolo',
     msg: 'Glória a Deuxx!',
     image: 'https://i.imgur.com/rgc6e2A.jpg'
-  }
+  },
+  ney: {
+    name: 'Neymar Jr',
+    username: 'neymarjr',
+    msg: 'Saudade do que a gente não viveu ainda',
+    image: 'https://imgur.com/E8nUnc1.jpg'
+  },
 };
+
