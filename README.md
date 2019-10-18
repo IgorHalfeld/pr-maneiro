@@ -30,6 +30,7 @@ Faça alguém feliz com um comentário no PR!
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
+- Carlos Bolsonaro
 
 ### Como instalar
 
