@@ -118,5 +118,11 @@ window.Persons = {
     username: 'CaboDaciolo',
     msg: 'Glória a Deuxx!',
     image: 'https://i.imgur.com/rgc6e2A.jpg'
+  },
+  bilu: {
+    name: 'ET Bilu',
+    username: 'BiluOficial',
+    msg: 'Busque conhecimento 🐚',
+    image: 'https://i.imgur.com/HXauGHq.jpg'
   }
 };
