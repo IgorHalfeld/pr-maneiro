@@ -5,8 +5,6 @@ window.Persons = {
     msg: 'Seu PR é TOP!!',
     image: 'https://i.imgur.com/axhwTtW.jpg'
   },
-<<<<<<< Updated upstream
-=======
   chaves: {
     name: 'chaves',
     username: 'chaves',
@@ -19,7 +17,6 @@ window.Persons = {
     msg: 'E o PR Ó',
     image: 'http://s01.video.glbimg.com/270x169/2724660.jpg'
   },
->>>>>>> Stashed changes
   yudi: {
     name: 'Yudi Tamashiro',
     username: 'yuditamashiro',
