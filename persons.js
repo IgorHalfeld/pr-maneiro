@@ -5,6 +5,12 @@ window.Persons = {
     msg: 'Seu PR é TOP!!',
     image: 'https://i.imgur.com/axhwTtW.jpg'
   },
+  chaves: {
+    name: 'chaves',
+    username: 'chaves',
+    msg: 'Que burro dá zero no PR',
+    image: 'https://img.huffingtonpost.com/asset/5d726f5f240000fb1777c53b.jpeg?ops=scalefit_630_noupscale'
+  },
   yudi: {
     name: 'Yudi Tamashiro',
     username: 'yuditamashiro',
