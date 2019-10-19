@@ -26,6 +26,7 @@ Faça alguém feliz com um comentário no PR!
 - Marina Silva
 - Marília Gabriela
 - Neymar Jr
+- PC Siqueira
 - Ronaldinho Gaúcho
 - Um Pistoleiro chamado Papaco
 - Vampeta

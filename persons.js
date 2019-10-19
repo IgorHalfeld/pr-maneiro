@@ -124,5 +124,11 @@ window.Persons = {
     username: 'DavyJonesRJ',
     msg: 'Ae, seu PR é maneirão hein',
     image: 'https://i.imgur.com/2gyjYjP.jpg'
+  },
+  pecesiqueira: {
+    name: 'PC Siqueira',
+    username: 'PCSiqueira',
+    msg: 'Mas poxa vida, que PR da hora!',
+    image: 'https://i.imgur.com/Ywih160.jpg'
   }
 };
