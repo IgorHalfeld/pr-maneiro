@@ -14,6 +14,7 @@ Faça alguém feliz com um comentário no PR!
 - Cabo Daciolo
 - Charlie Brown Jr
 - Dilma Rousseff
+- Davy Jones
 - Everson Zóio
 - Faustão
 - Gil Brother

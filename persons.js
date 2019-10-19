@@ -119,6 +119,12 @@ window.Persons = {
     msg: 'Glória a Deuxx!',
     image: 'https://i.imgur.com/rgc6e2A.jpg'
   },
+  davyjones: {
+    name: 'Davy Jones',
+    username: 'DavyJonesRJ',
+    msg: 'Ae, seu PR é maneirão hein',
+    image: 'https://i.imgur.com/2gyjYjP.jpg'
+  },
   pecesiqueira: {
     name: 'PC Siqueira',
     username: 'PCSiqueira',
