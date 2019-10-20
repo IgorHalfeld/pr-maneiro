@@ -15,6 +15,7 @@ Faça alguém feliz com um comentário no PR!
 - Carlos Bolsonaro
 - Charlie Brown Jr
 - Dilma Rousseff
+- Davy Jones
 - Everson Zóio
 - Faustão
 - Gil Brother
@@ -26,6 +27,7 @@ Faça alguém feliz com um comentário no PR!
 - Marina Silva
 - Marília Gabriela
 - Neymar Jr
+- PC Siqueira
 - Ronaldinho Gaúcho
 - Um Pistoleiro chamado Papaco
 - Vampeta

@@ -125,4 +125,16 @@ window.Persons = {
     msg: 'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
     image: 'https://i.imgur.com/vOPLfoV.jpg'
   },
+  davyjones: {
+    name: 'Davy Jones',
+    username: 'DavyJonesRJ',
+    msg: 'Ae, seu PR é maneirão hein',
+    image: 'https://i.imgur.com/2gyjYjP.jpg'
+  },
+  pecesiqueira: {
+    name: 'PC Siqueira',
+    username: 'PCSiqueira',
+    msg: 'Mas poxa vida, que PR da hora!',
+    image: 'https://i.imgur.com/Ywih160.jpg'
+  }
 };
