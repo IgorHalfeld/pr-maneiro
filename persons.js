@@ -123,6 +123,6 @@ window.Persons = {
     name: 'Carluxo',
     username: 'CarlosBolsonaro',
     msg: 'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
-    image: 'https://i.imgur.com/rgc6e2A.jpg'
+    image: 'https://i.imgur.com/vOPLfoV.jpg'
   },
 };
