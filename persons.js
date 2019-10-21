@@ -2,8 +2,8 @@ window.Persons = {
   ney: {
     name: 'Neymar Jr',
     username: 'neymarjr',
-    msg: 'Seu PR é TOP!!',
-    image: 'https://i.imgur.com/axhwTtW.jpg'
+    msg: 'Saudade do que a gente não viveu ainda!!',
+    image: 'https://i.imgur.com/k2Uah9s.jpg'
   },
   yudi: {
     name: 'Yudi Tamashiro',
