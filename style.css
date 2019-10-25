@@ -64,6 +64,7 @@ body {
   border-radius: 4px;
   font-size: 18px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .tweet {
