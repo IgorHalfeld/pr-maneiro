@@ -136,5 +136,11 @@ window.Persons = {
     username: 'PCSiqueira',
     msg: 'Mas poxa vida, que PR da hora!',
     image: 'https://i.imgur.com/Ywih160.jpg'
+  },
+  rodolfinho: {
+    name: 'Rody',
+    username: 'rodolfinho',
+    msg: 'stá muerto!',
+    image: 'https://i.imgur.com/Ywih10.jpg'
   }
 };
