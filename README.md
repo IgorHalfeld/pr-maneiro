@@ -12,6 +12,7 @@ Faça alguém feliz com um comentário no PR!
 
 - Arnaldo Cezar Coelho
 - Cabo Daciolo
+- Celso Portiolli
 - Carlos Bolsonaro
 - Charlie Brown Jr
 - Dilma Rousseff
