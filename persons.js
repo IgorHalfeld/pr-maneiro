@@ -118,5 +118,11 @@ window.Persons = {
     username: 'CaboDaciolo',
     msg: 'Glória a Deuxx!',
     image: 'https://i.imgur.com/rgc6e2A.jpg'
+  },
+  portiolli: {
+    name: 'Celso Portiolli',
+    username: 'celsoportiolli',
+    msg: 'E o pau TORANDO na timeline',
+    image: 'https://i.imgur.com/W2cVcsK.jpg'
   }
 };
