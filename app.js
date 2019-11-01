@@ -20,7 +20,6 @@
     template = persons[event.target.value];
     replaceValues();
   };
-  let dataUrl;
 
   const checkCopyFeature = () => {
     if(!navigator.clipboard || !navigator.clipboard.write || typeof ClipboardItem === 'undefined' ){
