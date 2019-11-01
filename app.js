@@ -1,19 +1,17 @@
 (async () => {
+  const $ = element => document.querySelector(element);
   const loadComponent = async component => {
     const res = await fetch('/components/' + component + '.html');
     return await res.text();
   };
-  const $ = element => document.querySelector(element);
 
   const tweetView = await loadComponent('tweet');
-  const target = $('#preview');
   const tweetValue = $('#tweetValue');
+  const previewElement = $('#preview');
   const templateElement = $('#template');
   const buttonCopy = $('#buttonCopy');
   const buttonDownload = $('#buttonDownload');
-
   const persons = window.Persons;
-
   let template = persons.ney;
 
   const selectTemplate = event => {
@@ -42,17 +40,17 @@
       .replace('{{ username }}', template.username)
       .replace('{{ image }}', template.image);
 
-    target.innerHTML = tweetComplete;
+    previewElement.innerHTML = tweetComplete;
   };
 
   const handleCopy = async () => {
-    const dataUrl = await domtoimage.toBlob($('#preview'), { quality: 0.95 });
+    const dataUrl = await domtoimage.toBlob($('#tweet'), { quality: 0.95 });
     const item = new ClipboardItem({ 'image/png': dataUrl });
     navigator.clipboard.write([item]);
   };
 
   const handleDownload = async () => {
-    const dataUrl = await domtoimage.toPng($('#preview'), { quality: 0.95 });
+    const dataUrl = await domtoimage.toPng($('#tweet'), { quality: 0.95 });
     const link = document.createElement('a');
     link.download = 'pr-maneiro.png';
     link.href = dataUrl;
