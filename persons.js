@@ -2,8 +2,8 @@ window.Persons = {
   ney: {
     name: 'Neymar Jr',
     username: 'neymarjr',
-    msg: 'Seu PR é TOP!!',
-    image: 'https://i.imgur.com/axhwTtW.jpg'
+    msg: 'Saudade do que a gente não viveu ainda!!',
+    image: 'https://i.imgur.com/k2Uah9s.jpg'
   },
   yudi: {
     name: 'Yudi Tamashiro',
@@ -118,5 +118,30 @@ window.Persons = {
     username: 'CaboDaciolo',
     msg: 'Glória a Deuxx!',
     image: 'https://i.imgur.com/rgc6e2A.jpg'
+  },
+  portiolli: {
+    name: 'Celso Portiolli',
+    username: 'celsoportiolli',
+    msg: 'E o pau TORANDO na timeline',
+    image: 'https://i.imgur.com/W2cVcsK.jpg'
+  },
+  carluxo: {
+    name: 'Carluxo',
+    username: 'CarlosBolsonaro',
+    msg:
+      'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
+    image: 'https://i.imgur.com/vOPLfoV.jpg'
+  },
+  davyjones: {
+    name: 'Davy Jones',
+    username: 'DavyJonesRJ',
+    msg: 'Ae, seu PR é maneirão hein',
+    image: 'https://i.imgur.com/2gyjYjP.jpg'
+  },
+  pecesiqueira: {
+    name: 'PC Siqueira',
+    username: 'PCSiqueira',
+    msg: 'Mas poxa vida, que PR da hora!',
+    image: 'https://i.imgur.com/Ywih160.jpg'
   }
 };
