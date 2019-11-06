@@ -30,6 +30,9 @@ Faça alguém feliz com um comentário no PR!
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
+- Professor Raimundo
+- Chaves
+- Padre Marcelo Rossi
 
 ### Como instalar
 
