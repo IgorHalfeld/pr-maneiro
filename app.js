@@ -47,6 +47,7 @@
     const dataUrl = await domtoimage.toBlob($('#tweet'), { quality: 0.95 });
     const item = new ClipboardItem({ 'image/png': dataUrl });
     navigator.clipboard.write([item]);
+    alert('Copiado para a área de transferência com sucesso!!');  
   };
 
   const handleDownload = async () => {
