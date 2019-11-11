@@ -161,5 +161,11 @@ window.Persons = {
     username: 'PCSiqueira',
     msg: 'Mas poxa vida, que PR da hora!',
     image: 'https://i.imgur.com/Ywih160.jpg'
+  },
+  datena: {
+    name: 'Datena',
+    username: 'DatenaOficial',
+    msg: 'Eu quero ibágens desse conflito!',
+    image: 'https://i.imgur.com/w1y5zWB.jpg',
   }
 };
