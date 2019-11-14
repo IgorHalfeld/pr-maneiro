@@ -37,6 +37,7 @@ Faça alguém feliz com um comentário no PR!
 - Professor Raimundo
 - Chaves
 - Padre Marcelo Rossi
+- Datena
 
 ### Como instalar
 
