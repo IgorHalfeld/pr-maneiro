@@ -167,5 +167,11 @@ window.Persons = {
     username: 'DatenaOficial',
     msg: 'Eu quero ibágens desse conflito!',
     image: 'https://i.imgur.com/w1y5zWB.jpg',
+  },
+  filipedeschamps: {
+    name: 'Filipe Deschamps',
+    username: 'FilipeDeschamps',
+    msg: 'Esse PR ta FULL DOPAMINA!',
+    image: 'https://i.imgur.com/hjz5kzN.png',
   }
 };
