@@ -89,6 +89,12 @@ window.Persons = {
     msg: 'O PR vai voltar... iêee 🎶',
     image: 'https://i.imgur.com/KZugqhH.png'
   },
+  kid: {
+    name: 'Kid Bengala',
+    username: 'kidbengalala',
+    msg: 'Que PRsão ein !!',
+    image: 'https://manchetenet.com/wp-content/uploads/2019/10/0003.jpg'
+  },
   bambam: {
     name: 'Kléber Bambam',
     username: 'bambamoficial',
