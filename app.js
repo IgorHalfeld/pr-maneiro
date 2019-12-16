@@ -14,6 +14,16 @@
   const persons = window.Persons;
   let template = persons.ney;
 
+  const createPeopleList = () => {
+    Object.keys(persons)
+      .forEach((person) => {
+        const option = document.createElement('option');
+        option.value = person;
+        option.textContent = persons[person].name;
+        templateElement.appendChild(option);
+      });
+  }
+
   const selectTemplate = event => {
     template = persons[event.target.value];
     replaceValues();
@@ -63,6 +73,7 @@
   templateElement.addEventListener('change', selectTemplate);
   tweetValue.addEventListener('keyup', replaceValues);
 
+  createPeopleList();
   replaceValues();
   checkCopyFeature();
 })();

@@ -12,11 +12,13 @@ Faça alguém feliz com um comentário no PR!
 
 - Arnaldo Cezar Coelho
 - Cabo Daciolo
-- Celso Portiolli
 - Carlos Bolsonaro
+- Celso Portiolli
 - Charlie Brown Jr
-- Dilma Rousseff
+- Chaves
+- Datena
 - Davy Jones
+- Dilma Rousseff
 - Everson Zóio
 - Faustão
 - Gil Brother
@@ -26,19 +28,17 @@ Faça alguém feliz com um comentário no PR!
 - Kléber Bambam
 - Maike da S.W.A.T
 - Mano Brown
-- Marina Silva
 - Marília Gabriela
+- Marina Silva
 - Neymar Jr
+- Padre Marcelo Rossi
 - PC Siqueira
+- Professor Raimundo
 - Ronaldinho Gaúcho
 - Um Pistoleiro chamado Papaco
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
-- Professor Raimundo
-- Chaves
-- Padre Marcelo Rossi
-- Datena
 
 ### Como instalar
 
