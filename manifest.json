@@ -4,10 +4,17 @@
   "description": "Faça alguém feliz com um comentário no PR!",
   "manifest_version": 2,
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
-  "permissions": ["declarativeContent", "storage", "tabs", "activeTab"],
+  "permissions": [
+    "declarativeContent",
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "index.html"

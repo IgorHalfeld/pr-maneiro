@@ -2,8 +2,26 @@ window.Persons = {
   ney: {
     name: 'Neymar Jr',
     username: 'neymarjr',
-    msg: 'Seu PR é TOP!!',
-    image: 'https://i.imgur.com/axhwTtW.jpg'
+    msg: 'Saudade do que a gente não viveu ainda!!',
+    image: 'https://i.imgur.com/k2Uah9s.jpg'
+  },
+  chaves: {
+    name: 'Chaves',
+    username: 'chaves',
+    msg: 'Que burro dá zero no PR',
+    image: 'https://img.huffingtonpost.com/asset/5d726f5f240000fb1777c53b.jpeg?ops=scalefit_630_noupscale'
+  },
+  professor: {
+    name: 'Professor Raimundo',
+    username: 'professor',
+    msg: 'E o PR Ó',
+    image: 'http://s01.video.glbimg.com/270x169/2724660.jpg'
+  },
+  rossi: {
+    name: 'Padre Marcelo Rossi',
+    username: 'rossi',
+    msg: 'Não diga a Deus o tamanho do seu PR.',
+    image: 'https://pleno.news/wp-content/uploads/2018/03/Padre-Marcelo-Rossi-e1520854893727-1024x701.jpg'
   },
   yudi: {
     name: 'Yudi Tamashiro',
@@ -71,6 +89,12 @@ window.Persons = {
     msg: 'O PR vai voltar... iêee 🎶',
     image: 'https://i.imgur.com/KZugqhH.png'
   },
+  kid: {
+    name: 'Kid Bengala',
+    username: 'kidbengalala',
+    msg: 'Que PRsão ein !!',
+    image: 'https://manchetenet.com/wp-content/uploads/2019/10/0003.jpg'
+  },
   bambam: {
     name: 'Kléber Bambam',
     username: 'bambamoficial',
@@ -124,5 +148,42 @@ window.Persons = {
     username: 'BiluOficial',
     msg: 'Busque conhecimento 🐚',
     image: 'https://i.imgur.com/HXauGHq.jpg'
+  },
+  portiolli: {
+    name: 'Celso Portiolli',
+    username: 'celsoportiolli',
+    msg: 'E o pau TORANDO na timeline',
+    image: 'https://i.imgur.com/W2cVcsK.jpg'
+  },
+  carluxo: {
+    name: 'Carluxo',
+    username: 'CarlosBolsonaro',
+    msg:
+      'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
+    image: 'https://i.imgur.com/vOPLfoV.jpg'
+  },
+  davyjones: {
+    name: 'Davy Jones',
+    username: 'DavyJonesRJ',
+    msg: 'Ae, seu PR é maneirão hein',
+    image: 'https://i.imgur.com/2gyjYjP.jpg'
+  },
+  pecesiqueira: {
+    name: 'PC Siqueira',
+    username: 'PCSiqueira',
+    msg: 'Mas poxa vida, que PR da hora!',
+    image: 'https://i.imgur.com/Ywih160.jpg'
+  },
+  datena: {
+    name: 'Datena',
+    username: 'DatenaOficial',
+    msg: 'Eu quero ibágens desse conflito!',
+    image: 'https://i.imgur.com/w1y5zWB.jpg',
+  },
+  filipedeschamps: {
+    name: 'Filipe Deschamps',
+    username: 'FilipeDeschamps',
+    msg: 'Esse PR ta FULL DOPAMINA!',
+    image: 'https://i.imgur.com/hjz5kzN.png',
   }
 };
