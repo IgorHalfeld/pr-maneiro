@@ -21,6 +21,7 @@ Faça alguém feliz com um comentário no PR!
 - Dilma Rousseff
 - Everson Zóio
 - Faustão
+- Filipe Deschamps
 - Gil Brother
 - Jailson Mendes
 - Jair M. Bolsonaro
