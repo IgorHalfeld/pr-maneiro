@@ -166,6 +166,6 @@ window.Persons = {
     name: 'Datena',
     username: 'DatenaOficial',
     msg: 'Eu quero ibágens desse conflito!',
-    image: 'https://i.imgur.com/w1y5zWB.jpg',
+    image: 'https://i.imgur.com/w1y5zWB.jpg'
   }
-};
+}

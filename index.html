@@ -11,9 +11,17 @@
   <body>
     <div class="container">
       <div>
-        <div class="w-100 d-flex flex-column">
+        <div class="w-100">
+          <label class="field-label">Preview</label>
+          <div class="preview" id="preview"></div>
+        </div>
+        <div class="w-100 d-flex flex-column" style="margin-top: 16px">
           <label class="field-label">Coloque o tweet 😍</label>
-          <textarea id="tweetValue" class="field-textarea"></textarea>
+          <textarea
+            placeholder="Messagem do tweet aqui :D"
+            id="tweetValue"
+            class="field-textarea">
+          </textarea>
         </div>
 
         <div class="w-100 d-flex flex-column" style="margin-top: 16px">
@@ -21,22 +29,21 @@
           <select class="w-100 form-select" id="template"></select>
         </div>
 
-        <div class="w-100" style="margin-top: 16px">
-          <label class="field-label">Preview</label>
-          <div class="preview" id="preview"></div>
+        <div class="w-100 d-flex align-items-center toolbar">
+          <button class="btn-copy flex-1" id="buttonCopy" type="button">
+            Copiar!
+          </button>
+          <button class="btn-save flex-1" id="buttonDownload" type="button">
+            Baixar!
+          </button>
         </div>
-
-        <button class="w-100 btn-summit" id="buttonCopy" type="button">
-          Copiar!
-        </button>
-        <button class="w-100 btn-summit" id="buttonDownload" type="button">
-          Baixar!
-        </button>
       </div>
     </div>
 
     <script src="libs/dom-to-image.min.js"></script>
-    <script src="persons.js"></script>
-    <script src="app.js"></script>
+    <script src="scripts/persons.js"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

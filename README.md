@@ -1,8 +1,10 @@
-<img style="" src="icon.png" width="80" />
+<p align="center">
+  <img src="icon.png" width="100" />
+  <h3 align="center">PR Maneiro 👍🏻</h3>
+  <p align="center">Faça alguém feliz com um comentário no PR!</p>
+</p>
 
-### PR Maneiro 👍🏻
-
-Faça alguém feliz com um comentário no PR!
+<hr />
 
 ### Como funciona
 
