@@ -23,9 +23,11 @@
 - Dilma Rousseff
 - Everson Zóio
 - Faustão
+- Filipe Deschamps
 - Gil Brother
 - Jailson Mendes
 - Jair M. Bolsonaro
+- Kid Bengala
 - Kléber Bambam
 - Maike da S.W.A.T
 - Mano Brown
