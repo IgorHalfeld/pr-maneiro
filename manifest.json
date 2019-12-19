@@ -3,17 +3,6 @@
   "version": "1.0",
   "description": "Faça alguém feliz com um comentário no PR!",
   "manifest_version": 2,
-  "content_scripts": [
-    {
-      "js": [
-        "scripts/app.js",
-        "scripts/main.js",
-        "scripts/helpers.js",
-        "scripts/persons.js"
-      ],
-      "matches": ["http://*/*", "https://*/*"]
-    }
-  ],
   "background": {
     "scripts": [
       "scripts/background.js"
