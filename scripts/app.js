@@ -12,8 +12,9 @@ async function BuildApp ({ window, document }) {
 
   const persons = window.Persons
 
-  const cleanTextArea = () => {
-    tweetValue.value = null
+  const cleanTextArea = (element) => {
+    if (!element) return
+    element.value = null
   }
 
   // creates select/option on view
@@ -83,7 +84,7 @@ async function BuildApp ({ window, document }) {
     createPeopleList()
     handleValuesChange()
     checkCopyCliboardFeature()
-    cleanTextArea()
+    cleanTextArea(tweetValue)
   }
   return { andRun }
 }
