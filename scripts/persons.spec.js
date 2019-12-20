@@ -3,7 +3,7 @@ const Persons = require('./persons')
 const requiredProperties = ['name', 'username', 'msg', 'image']
 
 describe('Persons', () => {
-  // TODO: needs be a imgur link
+  // TODO: needs be an imgur link
 
   it('should have all properties', () => {
     const persons = Object.values(Persons)
