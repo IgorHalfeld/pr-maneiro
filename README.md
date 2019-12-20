@@ -4,11 +4,11 @@
   <p align="center">Faça alguém feliz com um comentário no PR!</p>
 </p>
 
+<p align="center">
+  <img src="assets/demo-1.gif" width="500">
+<p>
+
 <hr />
-
-### Como funciona
-
-![demo 1](assets/demo-1.gif)
 
 ### Templates já disponíveis
 
