@@ -25,7 +25,6 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
     const dataUrl = await window.domtoimage.toBlob(element, { quality: 0.95 })
     const item = new window.ClipboardItem({ 'image/png': dataUrl })
     window.navigator.clipboard.write([item])
-    alert('Copiado para a área de transferência com sucesso!!')
   }
 
   // check if copy to clipboard feature is available

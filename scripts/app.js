@@ -54,7 +54,12 @@ async function BuildApp ({ window, document }) {
 
   buttonCopy.addEventListener('click', () => {
     const tweet = helpers.$('#tweet')
+    buttonCopy.textContent = 'Copiado 🔥'
     helpers.handleCopy(tweet)
+
+    setTimeout(() => {
+      buttonCopy.textContent = 'Copiar!'
+    }, 1500)
   })
   buttonDownload.addEventListener('click', () => {
     const tweet = helpers.$('#tweet')

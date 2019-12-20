@@ -42,6 +42,9 @@ body {
 .align-items-center {
   align-items: center;
 }
+.align-items-stretch {
+  align-items: stretch;
+}
 .w-100 {
   width: 100%;
 }
@@ -95,6 +98,7 @@ body {
   position: fixed;
   bottom: 0px;
   left: 0px;
+  height: 48px;
   background-color: #ccc;
 }
 .btn-save {
@@ -106,6 +110,7 @@ body {
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
+  transition: all 400ms ease-in;
 }
 .btn-copy {
   font-weight: bold;
@@ -116,6 +121,11 @@ body {
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
+  transition: all 400ms ease-in;
+}
+.btn-save:focus,
+.btn-copy:focus {
+  outline: none;
 }
 
 .tweet {
