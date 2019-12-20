@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img style="box-shadow: 0px 10px 30px #ccc" src="assets/demo-1.gif" width="500">
+  <img src="assets/demo-1.gif" width="500">
 <p>
 
 <hr />

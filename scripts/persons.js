@@ -1,4 +1,4 @@
-window.Persons = {
+const Persons = {
   ney: {
     name: 'Neymar Jr',
     username: 'neymarjr',
@@ -186,4 +186,10 @@ window.Persons = {
     msg: 'Esse PR ta FULL DOPAMINA!',
     image: 'https://i.imgur.com/hjz5kzN.png'
   }
+}
+
+if (typeof module === 'object') {
+  module.exports = Persons
+} else if (typeof window === 'object') {
+  window.Persons = Persons // eslint-disable-line
 }
