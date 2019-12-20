@@ -9,19 +9,19 @@ window.Persons = {
     name: 'Chaves',
     username: 'chaves',
     msg: 'Que burro dá zero no PR',
-    image: 'https://img.huffingtonpost.com/asset/5d726f5f240000fb1777c53b.jpeg?ops=scalefit_630_noupscale'
+    image: 'https://i.imgur.com/sU81hQd.jpg'
   },
   professor: {
     name: 'Professor Raimundo',
     username: 'professor',
     msg: 'E o PR Ó',
-    image: 'http://s01.video.glbimg.com/270x169/2724660.jpg'
+    image: 'https://i.imgur.com/APOnHJN.jpg'
   },
   rossi: {
     name: 'Padre Marcelo Rossi',
     username: 'rossi',
     msg: 'Não diga a Deus o tamanho do seu PR.',
-    image: 'https://pleno.news/wp-content/uploads/2018/03/Padre-Marcelo-Rossi-e1520854893727-1024x701.jpg'
+    image: 'https://i.imgur.com/z5gw1Wv.jpg'
   },
   yudi: {
     name: 'Yudi Tamashiro',
@@ -93,7 +93,7 @@ window.Persons = {
     name: 'Kid Bengala',
     username: 'kidbengalala',
     msg: 'Que PRsão ein !!',
-    image: 'https://manchetenet.com/wp-content/uploads/2019/10/0003.jpg'
+    image: 'hhttps://i.imgur.com/98n10Mz.jpg'
   },
   bambam: {
     name: 'Kléber Bambam',
