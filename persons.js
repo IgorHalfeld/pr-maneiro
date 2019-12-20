@@ -93,7 +93,7 @@ window.Persons = {
     name: 'Kid Bengala',
     username: 'kidbengalala',
     msg: 'Que PRsão ein !!',
-    image: 'hhttps://i.imgur.com/98n10Mz.jpg'
+    image: 'https://i.imgur.com/98n10Mz.jpg'
   },
   bambam: {
     name: 'Kléber Bambam',
