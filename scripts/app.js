@@ -89,4 +89,8 @@ async function BuildApp ({ window, document }) {
   return { andRun }
 }
 
-window.BuildApp = BuildApp // eslint-disable-line
+if (typeof module === 'object') {
+  module.exports = BuildApp
+} else if (typeof window === 'object') {
+  window.BuildApp = BuildApp // eslint-disable-line
+}

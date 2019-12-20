@@ -5,8 +5,8 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   const $ = (element) => document.querySelector(element)
 
   // load HTML as a "component"
-  const loadComponent = async (component) => {
-    const res = await window.fetch('/components/' + component + '.html')
+  const loadComponent = f => async (component) => {
+    const res = await f('/components/' + component + '.html')
     const template = await res.text()
     return template
   }
@@ -72,12 +72,16 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   return {
     $,
     handleDownload,
-    loadComponent,
     replaceValues,
     handleCopy,
     checkCopyFeature,
-    getCurrentTimeFormated
+    getCurrentTimeFormated,
+    loadComponent: loadComponent(window.fetch)
   }
 }
 
-window.CreateHelperFunctions = CreateHelperFunctions // eslint-disable-line
+if (typeof module === 'object') {
+  module.exports = CreateHelperFunctions
+} else if (typeof window === 'object') {
+  window.CreateHelperFunctions = CreateHelperFunctions // eslint-disable-line
+}
