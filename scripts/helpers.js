@@ -37,13 +37,13 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   }
 
   // get date on twitter format
-  const getCurrentTimeFormated = () => {
+  const getCurrentTimeFormated = (now = new Date()) => {
     const getCurrentMonth = monthNumber => {
       return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
         'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
       ][monthNumber]
     }
-    const now = new Date()
+
     const day = now.getDate()
     const year = now.getFullYear()
     const month = now.getMonth()
@@ -66,6 +66,7 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
       .replace('{{ time }}', time)
 
     previewEl.innerHTML = tweetComplete
+    return previewEl
   }
 
   return {
