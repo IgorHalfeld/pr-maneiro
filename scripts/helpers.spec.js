@@ -14,6 +14,9 @@ const deps = {
   document,
   window: {
     ...window,
+    domtoimage: {
+      toPng: () => 'image_png'
+    },
     fetch,
     navigator: {
       clipboard: {

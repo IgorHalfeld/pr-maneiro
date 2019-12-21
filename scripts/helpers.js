@@ -14,10 +14,12 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   // get the tweet element and parser to canvas to download as a image
   const handleDownload = async (element) => {
     const dataUrl = await window.domtoimage.toPng(element, { quality: 0.95 })
+    console.log('dataurl', dataUrl)
     const link = document.createElement('a')
     link.download = 'pr-maneiro.png'
     link.href = dataUrl
     link.click()
+    return link
   }
 
   // put image on cliboard for better UX

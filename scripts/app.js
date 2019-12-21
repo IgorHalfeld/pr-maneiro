@@ -15,25 +15,46 @@ async function BuildApp ({ window, document }) {
   const cleanTextArea = (element) => {
     if (!element) return
     element.value = null
+    return element
   }
 
   // creates select/option on view
-  const createPeopleList = () => {
-    Object.keys(persons)
+  const createPeopleListAndAttach = (data, template) => {
+    Object.keys(data)
       .forEach((person) => {
         const option = document.createElement('option')
         option.value = person
-        option.textContent = persons[person].name
-        templateElement.appendChild(option)
-        console.log('template element', templateElement)
+        option.textContent = data[person].name
+        template.appendChild(option)
       })
+    return template
   }
 
-  // replace values on view with default template or textarea value
+  // replace values on view with textarea value
+  const handleTypingValuesChange = (event) => {
+    const defaultTemplate = persons.ney
+    const value = (!!event && event.target.value.length)
+      ? event.target.value
+      : defaultTemplate.msg
+    const selected = templateElement.value
+    const template = persons[selected] ? persons[selected] : defaultTemplate
+
+    helpers.replaceValues({
+      previewEl,
+      time: helpers.getCurrentTimeFormated(),
+      value: value || template.msg,
+      image: template.image,
+      name: template.name,
+      username: template.username,
+      template: tweetView
+    })
+  }
+
+  // replace values on view with default template
   const handleValuesChange = (event) => {
     const defaultTemplate = persons.ney
-    const value = (!!event && event.target.value.length) ? event.target.value : null
-    const template = persons[value] ? persons[value] : defaultTemplate
+    const person = (!!event && event.target.value.length) ? event.target.value : null
+    const template = persons[person] ? persons[person] : defaultTemplate
 
     helpers.replaceValues({
       previewEl,
@@ -65,33 +86,24 @@ async function BuildApp ({ window, document }) {
     const tweet = helpers.$('#tweet')
     helpers.handleDownload(tweet)
   })
-  tweetValue.addEventListener('keyup', (event) => {
-    const defaultTemplate = persons.ney
-    const value = (!!event && event.target.value.length)
-      ? event.target.value
-      : defaultTemplate.msg
-    const selected = templateElement.value
-    const template = persons[selected] ? persons[selected] : defaultTemplate
-
-    helpers.replaceValues({
-      previewEl,
-      time: helpers.getCurrentTimeFormated(),
-      value: value || template.msg,
-      image: template.image,
-      name: template.name,
-      username: template.username,
-      template: tweetView
-    })
-  })
+  tweetValue.addEventListener('keyup', handleTypingValuesChange)
   templateElement.addEventListener('change', handleValuesChange)
 
   const andRun = () => {
-    createPeopleList()
+    createPeopleListAndAttach(persons, templateElement)
     handleValuesChange()
     checkCopyCliboardFeature()
     cleanTextArea(tweetValue)
   }
-  return { andRun }
+  return {
+    andRun,
+    _internal: {
+      createPeopleListAndAttach,
+      handleValuesChange,
+      handleTypingValuesChange,
+      cleanTextArea
+    }
+  }
 }
 
 if (typeof module === 'object') {
