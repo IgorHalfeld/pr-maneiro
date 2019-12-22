@@ -116,7 +116,7 @@ const Persons = {
   jacquin: {
     name: 'Erick Jacquin',
     username: 'erickJacquin',
-    msg: 'Cara, essa PR é a meió do mundo.',
+    msg: 'Vocë é a vergonha da profession!',
     image: 'https://i.imgur.com/65WQ5nD.jpg'
   },
   zoio: {
