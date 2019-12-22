@@ -51,3 +51,17 @@
 Clone esse repositório e instale nas extensões do chrome, exemplo abaixo:
 
 ![demo 2](assets/demo-2.gif)
+
+
+### Como adicionar mais alguém
+
+Coloque no arquivo [`persons.js`](https://github.com/IgorHalfeld/pr-maneiro/blob/master/scripts/persons.js) seguindo o padrão:
+
+```js
+ney: {
+  name: 'Neymar Jr',                               // nome (pode ter espaços)
+  username: 'neymarjr',                            // username
+  msg: 'Saudade do que a gente não viveu ainda!!', // mensagem do tweet
+  image: 'https://i.imgur.com/k2Uah9s.jpg'         // url da image (precisa usar o imgur.com)
+}
+```
