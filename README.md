@@ -24,6 +24,7 @@
 - Datena
 - Davy Jones
 - Dilma Rousseff
+- Erick Jacquin
 - Everson Zóio
 - Faustão
 - Filipe Deschamps
