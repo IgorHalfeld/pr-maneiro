@@ -1,12 +1,14 @@
-<img style="" src="icon.png" width="80" />
+<p align="center">
+  <img src="icon.png" width="100" />
+  <h3 align="center">PR Maneiro 👍🏻</h3>
+  <p align="center">Faça alguém feliz com um comentário no PR!</p>
+</p>
 
-### PR Maneiro 👍🏻
+<p align="center">
+  <img src="assets/demo-1.gif" width="500">
+<p>
 
-Faça alguém feliz com um comentário no PR!
-
-### Como funciona
-
-![demo 1](assets/demo-1.gif)
+<hr />
 
 ### Templates já disponíveis
 

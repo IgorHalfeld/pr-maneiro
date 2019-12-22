@@ -20,21 +20,55 @@ body {
   font-family: var(--font-family);
 }
 
+/* helpers */
+.flex-1 {
+  flex: 1;
+}
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  width: 100%;
+}
+
+/* custom style */
 .container {
   padding: 15px;
   width: 600px;
+  padding-bottom: 80px;
 }
 
 .field-label {
   font-size: 18px;
-  color: var(--color-text1);
+  color: var(--color-text2);
   font-weight: 700;
 }
 .field-textarea {
   margin-top: 8px;
   height: 85px;
   border: 1px solid var(--color-grey);
-  padding: 5px;
+  padding: 8px 5px;
   font-size: 15px;
 }
 .field-textarea:focus {
@@ -60,15 +94,38 @@ body {
   outline: none;
 }
 
-.btn-summit {
-  margin-top: 15px;
+.toolbar {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 48px;
+  background-color: #ccc;
+}
+.btn-save {
+  font-weight: bold;
+  text-transform: uppercase;
   border: none;
   background-color: var(--color-twitter);
   color: var(--color-white);
-  border-radius: 4px;
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
+  transition: all 400ms ease-in;
+}
+.btn-copy {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--color-grey);
+  color: var(--color-twitter);
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 400ms ease-in;
+}
+.btn-save:focus,
+.btn-copy:focus {
+  outline: none;
 }
 
 .tweet {
@@ -150,27 +207,3 @@ body {
   height: 22.5px;
 }
 
-.d-flex {
-  display: flex;
-}
-.flex-column {
-  flex-direction: column;
-}
-.justify-content-center {
-  justify-content: center;
-}
-.justify-content-between {
-  justify-content: space-between;
-}
-.justify-content-around {
-  justify-content: space-around;
-}
-.align-items-center {
-  align-items: center;
-}
-.w-100 {
-  width: 100%;
-}
-.h-100 {
-  width: 100%;
-}

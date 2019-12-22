@@ -1,4 +1,4 @@
-window.Persons = {
+const Persons = {
   ney: {
     name: 'Neymar Jr',
     username: 'neymarjr',
@@ -178,12 +178,18 @@ window.Persons = {
     name: 'Datena',
     username: 'DatenaOficial',
     msg: 'Eu quero ibágens desse conflito!',
-    image: 'https://i.imgur.com/w1y5zWB.jpg',
+    image: 'https://i.imgur.com/w1y5zWB.jpg'
   },
   filipedeschamps: {
     name: 'Filipe Deschamps',
     username: 'FilipeDeschamps',
     msg: 'Esse PR ta FULL DOPAMINA!',
-    image: 'https://i.imgur.com/hjz5kzN.png',
+    image: 'https://i.imgur.com/hjz5kzN.png'
   }
-};
+}
+
+if (typeof module === 'object') {
+  module.exports = Persons
+} else if (typeof window === 'object') {
+  window.Persons = Persons // eslint-disable-line
+}

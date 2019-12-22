@@ -1,11 +1,11 @@
 {
   "name": "PR Maneiro",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Faça alguém feliz com um comentário no PR!",
   "manifest_version": 2,
   "background": {
     "scripts": [
-      "background.js"
+      "scripts/background.js"
     ],
     "persistent": false
   },
