@@ -2,6 +2,9 @@
   <img src="icon.png" width="100" />
   <h3 align="center">PR Maneiro 👍🏻</h3>
   <p align="center">Faça alguém feliz com um comentário no PR!</p>
+  <p align="center">
+    <img src="https://travis-ci.org/IgorHalfeld/pr-maneiro.svg?branch=master)](https://travis-ci.org/IgorHalfeld/pr-maneiro" alt="Build Status">
+  </p>
 </p>
 
 <p align="center">
