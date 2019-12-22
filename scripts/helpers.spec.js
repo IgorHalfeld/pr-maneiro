@@ -1,7 +1,7 @@
 const CreateHelperFunctions = require('./helpers')
 const { readFileSync } = require('fs')
 
-const html = readFileSync(process.cwd() + '/index.html')
+const html = readFileSync(process.cwd() + '/index.template.html')
 
 const fetch = path => new Promise(resolve => {
   const file = readFileSync(process.cwd() + path)
