@@ -50,12 +50,22 @@ describe('Helpers', () => {
   })
 
   test('should get a date with exactly twitter format', async () => {
-    const dateFormated = await helpers.getCurrentTimeFormated(new Date('2019-12-21T22:47:07.889Z'))
-    expect(dateFormated).toEqual('8:47 PM · Dec 21 2019')
+    const time = new Date('2019-12-21T22:47:07')
+    const dateFormated = await helpers.getCurrentTimeFormated(time)
+    const hourNow = time.toLocaleString('en-US', {
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
+    })
+    const day = time.getDate()
+    const month = time.getMonth()
+    const year = time.getFullYear()
+    expect(dateFormated).toEqual(`${hourNow} · ${helpers.monthList[month]} ${day} ${year}`)
   })
 
   test('should replace values from a gave template', async () => {
     const template = '{{ tweetContent }}|{{ name }}|{{ username }}|{{ image }}|{{ time }}'
+    const time = new Date('2019-12-21T22:47:07.889Z')
     const element = await helpers.replaceValues({
       template,
       previewEl: document.getElementById('template'),
@@ -63,8 +73,8 @@ describe('Helpers', () => {
       username: '@igorhalfeld',
       value: 'hello friend',
       image: 'image_url',
-      time: new Date('2019-12-21T22:47:07.889Z')
+      time,
     })
-    expect(element.innerHTML).toEqual('hello friend|Igor Halfeld|@igorhalfeld|image_url|Sat Dec 21 2019 20:47:07 GMT-0200 (Brasilia Summer Time)')
+    expect(element.innerHTML).toEqual(`hello friend|Igor Halfeld|@igorhalfeld|image_url|${time}`)
   })
 })

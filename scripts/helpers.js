@@ -1,5 +1,9 @@
 async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   const { window, document } = deps
+  const monthList = [
+    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+  ];
 
   // jquery like to get some element on DOM
   const $ = (element) => document.querySelector(element)
@@ -41,9 +45,7 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   // get date on twitter format
   const getCurrentTimeFormated = (now = new Date()) => {
     const getCurrentMonth = monthNumber => {
-      return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
-      ][monthNumber]
+      return monthList[monthNumber]
     }
 
     const day = now.getDate()
@@ -73,6 +75,7 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
 
   return {
     $,
+    monthList,
     handleDownload,
     replaceValues,
     handleCopy,
