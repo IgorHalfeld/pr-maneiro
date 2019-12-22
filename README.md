@@ -65,3 +65,5 @@ ney: {
   image: 'https://i.imgur.com/k2Uah9s.jpg'         // url da image (precisa usar o imgur.com)
 }
 ```
+
+e não esqueça de adicionar [aqui na lista](https://github.com/IgorHalfeld/pr-maneiro#templates-j%C3%A1-dispon%C3%ADveis) desse README ❤️ pra galera ficar sabendo que o template existe.
