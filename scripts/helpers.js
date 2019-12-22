@@ -3,7 +3,7 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   const monthList = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
-  ];
+  ]
 
   // jquery like to get some element on DOM
   const $ = (element) => document.querySelector(element)

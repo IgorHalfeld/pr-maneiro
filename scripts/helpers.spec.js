@@ -73,7 +73,7 @@ describe('Helpers', () => {
       username: '@igorhalfeld',
       value: 'hello friend',
       image: 'image_url',
-      time,
+      time
     })
     expect(element.innerHTML).toEqual(`hello friend|Igor Halfeld|@igorhalfeld|image_url|${time}`)
   })

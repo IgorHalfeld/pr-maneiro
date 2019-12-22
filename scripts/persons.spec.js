@@ -12,10 +12,9 @@ describe('Persons', () => {
 
   it('all images should be a imgur link', () => {
     const persons = Object.values(Persons)
-    const rx = new RegExp('(i\.imgur\.com)')
 
     persons.forEach(person => {
-      const rx = new RegExp('(i\.imgur\.com)')
+      const rx = new RegExp('(i.imgur.com)')
       const link = person.image.match(rx)[0]
       expect(link).toEqual('i.imgur.com')
     })
