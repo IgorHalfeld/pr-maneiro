@@ -31,6 +31,7 @@
 - Gil Brother
 - Jailson Mendes
 - Jair M. Bolsonaro
+- Joel Santana
 - Kid Bengala
 - Kléber Bambam
 - Maike da S.W.A.T
