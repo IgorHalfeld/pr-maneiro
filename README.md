@@ -24,6 +24,7 @@
 - Datena
 - Davy Jones
 - Dilma Rousseff
+- Donald J. Trump
 - Erick Jacquin
 - Everson Zóio
 - Faustão
