@@ -39,6 +39,7 @@
 - Marina Silva
 - Neymar Jr
 - Padre Marcelo Rossi
+- Pedro Bial
 - PC Siqueira
 - Professor Raimundo
 - Ronaldinho Gaúcho
