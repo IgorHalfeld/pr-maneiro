@@ -41,6 +41,12 @@ const Persons = {
     msg: 'PR legal. Grande abraço 👍🏻',
     image: 'https://i.imgur.com/UrxtArM.jpg'
   },
+  joelsantana: {
+    name: 'Joel Santana',
+    username: 'SantanaJoel',
+    msg: 'Tu ta de brincation with me com esse PR, cara?',
+    image: 'https://i.imgur.com/7Bj0A1A.jpg'
+  },
   dilma: {
     name: 'Dilma Rousseff',
     username: 'dilmabr',
