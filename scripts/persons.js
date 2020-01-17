@@ -35,6 +35,12 @@ const Persons = {
     msg: 'Esse PR é aleatório d+ até pros meus padrões',
     image: 'https://i.imgur.com/D2YmPkl.jpg'
   },
+  trump: {
+    name: 'Donald J. Trump',
+    username: 'realDonaldTrump',
+    msg: "It's easier win the third world war than review this PR",
+    image: 'https://i.imgur.com/UCtZwck.jpg'
+  },
   jair: {
     name: 'Jair M. Bolsonaro',
     username: 'jairbolsonaro',
