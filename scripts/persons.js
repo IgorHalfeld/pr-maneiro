@@ -65,6 +65,12 @@ const Persons = {
     msg: 'Esse PR precisa ser mergeado. Democraticamente',
     image: 'https://i.imgur.com/L3FkANj.jpg'
   },
+  stevie: {
+    name: 'Stevie Wonder',
+    username: 'StevieWonder',
+    msg: "I can't see why did you do this changes!!",
+    image: 'https://i.imgur.com/fc757Km.jpg'
+  },
   vampeta: {
     name: 'Vampeta',
     username: 'vampeta',

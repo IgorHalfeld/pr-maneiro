@@ -45,6 +45,7 @@
 - PC Siqueira
 - Professor Raimundo
 - Ronaldinho Gaúcho
+- Stevie Wonder
 - Um Pistoleiro chamado Papaco
 - Vampeta
 - Yudi Tamashiro
