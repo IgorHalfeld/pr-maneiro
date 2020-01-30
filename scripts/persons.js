@@ -83,6 +83,12 @@ const Persons = {
     msg: 'Esse PR ai é fera meu!',
     image: 'https://i.imgur.com/KScvaAy.jpg'
   },
+  cirillo: {
+    name: 'Marcus Cirillo',
+    username: 'cirillo_oficial',
+    msg: 'Mergeia esse PR, nem que vorte o cheque!!',
+    image: 'https://i.imgur.com/CzOi3fI.jpg'
+  },
   marilia: {
     name: 'Marília Gabriela',
     username: 'MGabrielaReal',

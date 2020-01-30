@@ -36,6 +36,7 @@
 - Kid Bengala
 - Kléber Bambam
 - Maike da S.W.A.T
+- Marcus Cirillo
 - Mano Brown
 - Marília Gabriela
 - Marina Silva
