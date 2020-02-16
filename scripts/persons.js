@@ -220,6 +220,12 @@ const Persons = {
     username: 'FilipeDeschamps',
     msg: 'Esse PR ta FULL DOPAMINA!',
     image: 'https://i.imgur.com/hjz5kzN.png'
+  },
+  darthvader: {
+    name: 'Darth Vader',
+    username: 'DarthVader',
+    msg: 'Sua falta de fé nesse PR é pertubadora.',
+    image: 'https://i.imgur.com/LPLHgHX.jpg?1'
   }
 }
 
