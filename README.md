@@ -21,6 +21,7 @@
 - Celso Portiolli
 - Charlie Brown Jr
 - Chaves
+- Darth Vader
 - Datena
 - Davy Jones
 - Dilma Rousseff
