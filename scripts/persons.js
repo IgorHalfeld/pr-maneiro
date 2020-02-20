@@ -226,6 +226,12 @@ const Persons = {
     username: 'DarthVader',
     msg: 'Sua falta de fé nesse PR é pertubadora.',
     image: 'https://i.imgur.com/LPLHgHX.jpg?1'
+  },
+  galvaobueno: {
+    name: 'Galvão Bueno',
+    username: 'GalvaoBueno',
+    msg: 'Conflitoooooouuuuuuuu!!!!!!!.',
+    image: 'https://i.imgur.com/8DiTArM.jpg?1'
   }
 }
 

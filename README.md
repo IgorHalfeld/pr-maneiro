@@ -30,6 +30,7 @@
 - Everson Zóio
 - Faustão
 - Filipe Deschamps
+- Galvão Bueno
 - Gil Brother
 - Jailson Mendes
 - Jair M. Bolsonaro
