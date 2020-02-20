@@ -10,6 +10,7 @@
   --color-grey: #e5ecf0;
   --color-text1: #13171a;
   --color-text2: #617788;
+  --color-text-dark-mode: #fff;
   --color-twitter: #00a1f9;
 }
 
@@ -90,6 +91,11 @@ body {
   border: 1px solid var(--color-grey);
   border-radius: 4px;
 }
+
+.dark-mode .form-select {
+  color: var(--color-text-dark-mode);
+}
+
 .form-select:focus {
   outline: none;
 }
@@ -133,6 +139,7 @@ body {
   height: auto;
   padding: 15px;
   border: 1px solid #f4f4f4;
+  transition: background-color 0.2s ease;
   background-color: white;
 }
 
@@ -153,6 +160,9 @@ body {
   color: var(--color-text1);
   font-size: 15px;
 }
+.dark-mode .header-info > h3 {
+  color: var(--color-text-dark-mode);
+}
 .header-info > p {
   color: var(--color-text2);
   font-size: 15px;
@@ -170,6 +180,10 @@ body {
   line-height: 1.3125;
   font-size: 23px;
   color: var(--color-text1);
+}
+
+.dark-mode .tweet-body {
+  color: var(--color-text-dark-mode);
 }
 
 .tweet-label {
@@ -198,6 +212,9 @@ body {
 .tweet-analytics span strong {
   color: var(--color-text1);
 }
+.dark-mode .tweet-analytics span strong {
+  color: var(--color-text-dark-mode);
+}
 
 .tweet-actions {
   padding: 15px 0px;
@@ -207,3 +224,88 @@ body {
   height: 22.5px;
 }
 
+.dark-mode .tweet-actions > .icon path {
+  fill: var(--color-text2);
+}
+
+.dark-mode .header-icon {
+  fill: var(--color-white);
+}
+
+.dark-mode.tweet {
+  transition: background-color 0.2s ease;
+  border: none;
+  background-color: #16202A;
+}
+
+.message-wrapper {
+  margin-top: 16px;
+  position: relative;
+}
+
+.change-mode-wrapper {
+  position: absolute;
+  right: 4px;
+}
+
+.change-mode-wrapper label {
+  margin-right: 8px;
+  color: var(--color-text2);
+  font-weight: bold;
+}
+
+.switch_box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 200px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+input[type="checkbox"].switch_1{
+  font-size: 30px;
+  -webkit-appearance: none;
+      -moz-appearance: none;
+          appearance: none;
+  width: 35px;
+  height: 15px;
+  background: #ddd;
+  border-radius: 3em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+input[type="checkbox"].switch_1:checked{
+  background: var(--color-twitter);
+}
+
+input[type="checkbox"].switch_1:after{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+          box-shadow: 0 0 .25em rgba(0,0,0,.3);
+  -webkit-transform: scale(.7);
+          transform: scale(.7);
+  left: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+input[type="checkbox"].switch_1:checked:after{
+  left: calc(100% - 15px);
+}

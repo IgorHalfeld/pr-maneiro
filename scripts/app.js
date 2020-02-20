@@ -9,6 +9,7 @@ async function BuildApp ({ window, document }) {
   const templateElement = helpers.$('#template')
   const buttonCopy = helpers.$('#buttonCopy')
   const buttonDownload = helpers.$('#buttonDownload')
+  const darkModeBtn = helpers.$('#change-mode')
 
   const persons = window.Persons
 
@@ -48,6 +49,8 @@ async function BuildApp ({ window, document }) {
       username: template.username,
       template: tweetView
     })
+
+    changeDarkMode()
   }
 
   // replace values on view with default template
@@ -65,6 +68,16 @@ async function BuildApp ({ window, document }) {
       username: template.username,
       template: tweetView
     })
+    changeDarkMode()
+  }
+
+  // Check if must keep the dark-mode
+  const changeDarkMode = (event) => {
+    if (darkModeBtn.checked) {
+      tweet.classList.add("dark-mode");
+    } else {
+      tweet.classList.remove("dark-mode");
+    }
   }
 
   // if not available, remove button
@@ -88,6 +101,7 @@ async function BuildApp ({ window, document }) {
   })
   tweetValue.addEventListener('keyup', handleTypingValuesChange)
   templateElement.addEventListener('change', handleValuesChange)
+  darkModeBtn.addEventListener('change', changeDarkMode)
 
   const andRun = () => {
     createPeopleListAndAttach(persons, templateElement)
