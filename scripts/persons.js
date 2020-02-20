@@ -194,7 +194,8 @@ const Persons = {
   carluxo: {
     name: 'Carluxo',
     username: 'CarlosBolsonaro',
-    msg: 'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
+    msg:
+      'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
     image: 'https://i.imgur.com/vOPLfoV.jpg'
   },
   davyjones: {
@@ -232,6 +233,12 @@ const Persons = {
     username: 'GalvaoBueno',
     msg: 'Conflitoooooouuuuuuuu!!!!!!!.',
     image: 'https://i.imgur.com/8DiTArM.jpg?1'
+  },
+  dadodollabela: {
+    name: 'Dado Dollabela',
+    username: 'dadodolabeIla',
+    msg: 'Tu traiu o movimento Clean Code, véio!',
+    image: 'https://i.imgur.com/YsLeAi9.jpg'
   }
 }
 
