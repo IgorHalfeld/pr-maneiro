@@ -21,6 +21,7 @@
 - Celso Portiolli
 - Charlie Brown Jr
 - Chaves
+- Dado Dolabella
 - Darth Vader
 - Datena
 - Davy Jones
@@ -59,7 +60,6 @@
 Clone esse repositório e instale nas extensões do chrome, exemplo abaixo:
 
 ![demo 2](assets/demo-2.gif)
-
 
 ### Como adicionar mais alguém
 
