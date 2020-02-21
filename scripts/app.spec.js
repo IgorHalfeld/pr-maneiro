@@ -68,4 +68,19 @@ describe('App', () => {
     const textAreaElement = app.cleanTextArea()
     expect(textAreaElement).toEqual(undefined)
   })
+
+  it('should turn on dark mode and .dark-mode should be added to #tweet', () => {
+    const btnDarkMode = document.createElement('input')
+    btnDarkMode.type = 'checkbox'
+    btnDarkMode.name = 'change-mode'
+    btnDarkMode.id = 'change-mode'
+
+    const tweet = document.createElement('div')
+    tweet.id = 'tweet'
+
+    btnDarkMode.addEventListener('change', event => app.changeDarkMode(btnDarkMode, tweet))
+    btnDarkMode.click()
+
+    expect(tweet.classList.contains('dark-mode')).toBeTruthy()
+  })
 })

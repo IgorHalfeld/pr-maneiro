@@ -137,7 +137,7 @@ const Persons = {
     msg: 'Esse PR ta pampa, irmão!',
     image: 'https://i.imgur.com/32HadJ1.png'
   },
-  mano: {
+  pedrobial: {
     name: 'Pedro Bial',
     username: 'PBiaL',
     msg: 'Dei uma espiadinha e gostei do que vi',
