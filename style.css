@@ -168,6 +168,16 @@ body {
   font-size: 15px;
 }
 
+.water-mark {
+  flex: 1;
+  opacity: 0.2;
+  text-align: end;
+}
+
+.dark-mode .water-mark {
+  color: white;
+}
+
 .header-icon {
   width: 18.75px;
   height: 18.75px;
