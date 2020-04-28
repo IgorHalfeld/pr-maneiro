@@ -44,6 +44,7 @@
 - Marília Gabriela
 - Marina Silva
 - Neymar Jr
+- Nego Di
 - Padre Marcelo Rossi
 - Pedro Bial
 - PC Siqueira

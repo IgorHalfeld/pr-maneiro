@@ -5,6 +5,12 @@ const Persons = {
     msg: 'Saudade do que a gente não viveu ainda!!',
     image: 'https://i.imgur.com/k2Uah9s.jpg'
   },
+  negodi: {
+    name: 'Nego Di',
+    username: 'negodioficial',
+    msg: 'Esse PR não vai subi ein negrão!!',
+    image: 'https://i.imgur.com/dSXpg8A.png'
+  },
   chaves: {
     name: 'Chaves',
     username: 'chaves',
