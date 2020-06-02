@@ -21,7 +21,7 @@ async function BuildApp ({ window, document }) {
 
   // creates select/option on view
   const createPeopleListAndAttach = (data, template) => {
-    Object.keys(data)
+    Object.keys(data).sort()
       .forEach((person) => {
         const option = document.createElement('option')
         option.value = person
