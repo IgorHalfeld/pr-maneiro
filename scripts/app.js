@@ -21,7 +21,7 @@ async function BuildApp ({ window, document }) {
 
   // creates select/option on view
   const createPeopleListAndAttach = (data, template) => {
-    Object.keys(data)
+    Object.keys({ ...data })
       .sort(function(a, b) {
         var nameA = data[a].name.toUpperCase();
         var nameB = data[b].name.toUpperCase();
@@ -66,6 +66,7 @@ async function BuildApp ({ window, document }) {
     const defaultTemplate = persons.ney
     const person = (!!event && event.target.value.length) ? event.target.value : null
     const template = persons[person] ? persons[person] : defaultTemplate
+    templateElement.value = person
 
     helpers.replaceValues({
       previewEl,
@@ -88,7 +89,7 @@ async function BuildApp ({ window, document }) {
     }
   }
 
-  const changeDarkModeHandler = event => {
+  const changeDarkModeHandler = () => {
     const tweet = helpers.$('#tweet')
     changeDarkMode(darkModeBtn, tweet)
   }

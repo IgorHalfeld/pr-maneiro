@@ -85,7 +85,6 @@ body {
   margin-top: 8px;
   height: 40px;
   font-size: 16px;
-  padding: 20px;
   color: var(--color-text1);
   background-color: white;
   border: 1px solid var(--color-grey);
@@ -215,7 +214,7 @@ body {
   border-top: 1px solid var(--color-grey);
   border-bottom: 1px solid var(--color-grey);
 }
-.dark-mode  .tweet-analytics {
+.dark-mode .tweet-analytics {
   border: none;
 }
 .tweet-analytics span:last-child {
@@ -250,7 +249,7 @@ body {
 .dark-mode.tweet {
   transition: background-color 0.2s ease;
   border: none;
-  background-color: #16202A;
+  background-color: #16202a;
 }
 
 .message-wrapper {
@@ -269,27 +268,27 @@ body {
   font-weight: bold;
 }
 
-.switch_box{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	max-width: 200px;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+.switch_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 200px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
-input[type="checkbox"].switch_1{
+input[type='checkbox'].switch_1 {
   font-size: 30px;
   -webkit-appearance: none;
-      -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 35px;
   height: 15px;
   background: #ddd;
@@ -297,30 +296,30 @@ input[type="checkbox"].switch_1{
   position: relative;
   cursor: pointer;
   outline: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-input[type="checkbox"].switch_1:checked{
+input[type='checkbox'].switch_1:checked {
   background: var(--color-twitter);
 }
 
-input[type="checkbox"].switch_1:after{
+input[type='checkbox'].switch_1:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #fff;
-  -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
-          box-shadow: 0 0 .25em rgba(0,0,0,.3);
-  -webkit-transform: scale(.7);
-          transform: scale(.7);
+  -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
   left: 0;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-input[type="checkbox"].switch_1:checked:after{
+input[type='checkbox'].switch_1:checked:after {
   left: calc(100% - 15px);
 }
