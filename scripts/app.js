@@ -46,9 +46,7 @@ async function BuildApp({ window, document }) {
     const selected = templateElement.value
     const template = persons[selected] ? persons[selected] : defaultTemplate
     const value =
-      !!event && event.target.value.length
-        ? event.target.value
-        : template.msg
+      !!event && event.target.value.length ? event.target.value : template.msg
 
     helpers.replaceValues({
       previewEl,
@@ -70,7 +68,7 @@ async function BuildApp({ window, document }) {
   const handleValuesChange = event => {
     const defaultTemplate = persons.ney
     const person =
-      !!event && event.target.value.length ? event.target.value : null
+      !!event && event.target.value.length ? event.target.value : templateElement.value
     const template = persons[person] ? persons[person] : defaultTemplate
     templateElement.value = person
 
