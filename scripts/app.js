@@ -43,12 +43,12 @@ async function BuildApp({ window, document }) {
   // replace values on view with textarea value
   const handleTypingValuesChange = event => {
     const defaultTemplate = persons.ney
+    const selected = templateElement.value
+    const template = persons[selected] ? persons[selected] : defaultTemplate
     const value =
       !!event && event.target.value.length
         ? event.target.value
-        : defaultTemplate.msg
-    const selected = templateElement.value
-    const template = persons[selected] ? persons[selected] : defaultTemplate
+        : template.msg
 
     helpers.replaceValues({
       previewEl,
