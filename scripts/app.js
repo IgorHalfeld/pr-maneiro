@@ -1,6 +1,6 @@
-async function BuildApp({ window, document }) {
+async function BuildApp ({ window, document }) {
   const helpers = await window.CreateHelperFunctions({
-    deps: { window, document },
+    deps: { window, document }
   })
 
   const tweetView = await helpers.loadComponent('tweet')
@@ -58,7 +58,7 @@ async function BuildApp({ window, document }) {
       template: tweetView,
       phoneModel: checkPhoneModel(),
       retweets: randomNumber(),
-      likes: randomNumber(),
+      likes: randomNumber()
     })
 
     changeDarkModeHandler()
@@ -82,7 +82,7 @@ async function BuildApp({ window, document }) {
       template: tweetView,
       phoneModel: checkPhoneModel(),
       retweets: randomNumber(),
-      likes: randomNumber(),
+      likes: randomNumber()
     })
     changeDarkModeHandler()
   }
@@ -151,8 +151,8 @@ async function BuildApp({ window, document }) {
       handleTypingValuesChange,
       cleanTextArea,
       changeDarkMode,
-      changePhoneModelHandler,
-    },
+      changePhoneModelHandler
+    }
   }
 }
 

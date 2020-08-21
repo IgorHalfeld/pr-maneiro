@@ -1,4 +1,4 @@
-async function CreateHelperFunctions({ deps }) {
+async function CreateHelperFunctions ({ deps }) {
   // eslint-disable-line
   const { window, document } = deps
   const monthList = [
@@ -13,7 +13,7 @@ async function CreateHelperFunctions({ deps }) {
     'Sep',
     'Oct',
     'Nov',
-    'Dec',
+    'Dec'
   ]
 
   // jquery like to get some element on DOM
@@ -64,7 +64,7 @@ async function CreateHelperFunctions({ deps }) {
     const hourNow = now.toLocaleString('en-US', {
       hour: 'numeric',
       minute: 'numeric',
-      hour12: true,
+      hour12: true
     })
 
     return `${hourNow} · ${getCurrentMonth(month)} ${day} ${year}`
@@ -81,7 +81,7 @@ async function CreateHelperFunctions({ deps }) {
     time,
     phoneModel,
     retweets,
-    likes,
+    likes
   }) => {
     const tweetComplete = template
       .replace('{{ tweetContent }}', value)
@@ -105,7 +105,7 @@ async function CreateHelperFunctions({ deps }) {
     handleCopy,
     checkCopyFeature,
     getCurrentTimeFormated,
-    loadComponent: loadComponent(window.fetch),
+    loadComponent: loadComponent(window.fetch)
   }
 }
 
