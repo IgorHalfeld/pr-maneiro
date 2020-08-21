@@ -258,14 +258,20 @@ body {
 }
 
 .change-mode-wrapper {
+  display: flex;
   position: absolute;
   right: 4px;
+  top: 7px;
 }
 
 .change-mode-wrapper label {
   margin-right: 8px;
   color: var(--color-text2);
   font-weight: bold;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .switch_box {
@@ -322,4 +328,8 @@ input[type='checkbox'].switch_1:after {
 
 input[type='checkbox'].switch_1:checked:after {
   left: calc(100% - 15px);
+}
+
+.mr-2 {
+  margin-right: .5rem;
 }

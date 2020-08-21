@@ -1,22 +1,33 @@
-async function CreateHelperFunctions({ deps }) { // eslint-disable-line
+async function CreateHelperFunctions({ deps }) {
+  // eslint-disable-line
   const { window, document } = deps
   const monthList = [
-    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
   ]
 
   // jquery like to get some element on DOM
-  const $ = (element) => document.querySelector(element)
+  const $ = element => document.querySelector(element)
 
   // load HTML as a "component"
-  const loadComponent = f => async (component) => {
+  const loadComponent = f => async component => {
     const res = await f('/components/' + component + '.html')
     const template = await res.text()
     return template
   }
 
   // get the tweet element and parser to canvas to download as a image
-  const handleDownload = async (element) => {
+  const handleDownload = async element => {
     const dataUrl = await window.domtoimage.toPng(element, { quality: 0.95 })
     const link = document.createElement('a')
     link.download = 'pr-maneiro.png'
@@ -26,7 +37,7 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
   }
 
   // put image on cliboard for better UX
-  const handleCopy = async (element) => {
+  const handleCopy = async element => {
     const dataUrl = await window.domtoimage.toBlob(element, { quality: 0.95 })
     const item = new window.ClipboardItem({ 'image/png': dataUrl })
     window.navigator.clipboard.write([item])
@@ -53,20 +64,34 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
     const hourNow = now.toLocaleString('en-US', {
       hour: 'numeric',
       minute: 'numeric',
-      hour12: true
+      hour12: true,
     })
 
     return `${hourNow} · ${getCurrentMonth(month)} ${day} ${year}`
   }
 
   // replate `{{}}` expressions from template before insert on DOM
-  const replaceValues = ({ template, previewEl, name, username, value, image, time }) => {
+  const replaceValues = ({
+    template,
+    previewEl,
+    name,
+    username,
+    value,
+    image,
+    time,
+    phoneModel,
+    retweets,
+    likes,
+  }) => {
     const tweetComplete = template
       .replace('{{ tweetContent }}', value)
       .replace('{{ name }}', name)
       .replace('{{ username }}', username)
       .replace('{{ image }}', image)
       .replace('{{ time }}', time)
+      .replace('{{ phoneModel }}', phoneModel)
+      .replace('{{ retweets }}', retweets)
+      .replace('{{ likes }}', likes)
 
     previewEl.innerHTML = tweetComplete
     return previewEl
@@ -80,7 +105,7 @@ async function CreateHelperFunctions({ deps }) { // eslint-disable-line
     handleCopy,
     checkCopyFeature,
     getCurrentTimeFormated,
-    loadComponent: loadComponent(window.fetch)
+    loadComponent: loadComponent(window.fetch),
   }
 }
 

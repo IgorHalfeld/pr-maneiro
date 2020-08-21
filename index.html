@@ -19,18 +19,34 @@
           <label class="field-label">Coloque o tweet 😍</label>
           <div class="change-mode-wrapper">
             <div class="switch_box box_1">
-              <label>Dark mode</label>
-              <input type="checkbox" name="change-mode" id="change-mode" class="switch_1">
+              <label>iPhone</label>
+              <input
+                type="checkbox"
+                name="phone-model"
+                id="phone-model"
+                class="switch_1 mr-2"
+                checked
+              />
+            </div>
+            <div class="switch_box box_1">
+              <label class="nowrap">Dark mode</label>
+              <input
+                type="checkbox"
+                name="change-mode"
+                id="change-mode"
+                class="switch_1"
+              />
             </div>
           </div>
           <textarea
             placeholder="Messagem do tweet aqui :D"
             id="tweetValue"
-            class="field-textarea">
+            class="field-textarea"
+          >
           </textarea>
         </div>
 
-        <div class="w-100 d-flex flex-column" style="margin-top: 16px">
+        <div class="w-100 d-flex flex-column" style="margin-top: 16px;">
           <label class="field-label">Template</label>
           <select class="w-100 form-select" id="template"></select>
         </div>

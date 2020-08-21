@@ -1,6 +1,6 @@
-async function BuildApp ({ window, document }) {
+async function BuildApp({ window, document }) {
   const helpers = await window.CreateHelperFunctions({
-    deps: { window, document }
+    deps: { window, document },
   })
 
   const tweetView = await helpers.loadComponent('tweet')
@@ -10,10 +10,11 @@ async function BuildApp ({ window, document }) {
   const buttonCopy = helpers.$('#buttonCopy')
   const buttonDownload = helpers.$('#buttonDownload')
   const darkModeBtn = helpers.$('#change-mode')
+  const phoneModelBtn = helpers.$('#phone-model')
 
   const persons = window.Persons
 
-  const cleanTextArea = (element) => {
+  const cleanTextArea = element => {
     if (!element) return
     element.value = null
     return element
@@ -22,15 +23,15 @@ async function BuildApp ({ window, document }) {
   // creates select/option on view
   const createPeopleListAndAttach = (data, template) => {
     Object.keys({ ...data })
-      .sort(function(a, b) {
-        var nameA = data[a].name.toUpperCase();
-        var nameB = data[b].name.toUpperCase();
-      
-        if (nameA < nameB) return -1;
-        if (nameA > nameB) return 1;
-        return 0;
+      .sort(function (a, b) {
+        var nameA = data[a].name.toUpperCase()
+        var nameB = data[b].name.toUpperCase()
+
+        if (nameA < nameB) return -1
+        if (nameA > nameB) return 1
+        return 0
       })
-      .forEach((person) => {
+      .forEach(person => {
         const option = document.createElement('option')
         option.value = person
         option.textContent = data[person].name
@@ -40,11 +41,12 @@ async function BuildApp ({ window, document }) {
   }
 
   // replace values on view with textarea value
-  const handleTypingValuesChange = (event) => {
+  const handleTypingValuesChange = event => {
     const defaultTemplate = persons.ney
-    const value = (!!event && event.target.value.length)
-      ? event.target.value
-      : defaultTemplate.msg
+    const value =
+      !!event && event.target.value.length
+        ? event.target.value
+        : defaultTemplate.msg
     const selected = templateElement.value
     const template = persons[selected] ? persons[selected] : defaultTemplate
 
@@ -55,16 +57,20 @@ async function BuildApp ({ window, document }) {
       image: template.image,
       name: template.name,
       username: template.username,
-      template: tweetView
+      template: tweetView,
+      phoneModel: checkPhoneModel(),
+      retweets: randomNumber(),
+      likes: randomNumber(),
     })
 
     changeDarkModeHandler()
   }
 
   // replace values on view with default template
-  const handleValuesChange = (event) => {
+  const handleValuesChange = event => {
     const defaultTemplate = persons.ney
-    const person = (!!event && event.target.value.length) ? event.target.value : null
+    const person =
+      !!event && event.target.value.length ? event.target.value : null
     const template = persons[person] ? persons[person] : defaultTemplate
     templateElement.value = person
 
@@ -75,7 +81,10 @@ async function BuildApp ({ window, document }) {
       image: template.image,
       name: template.name,
       username: template.username,
-      template: tweetView
+      template: tweetView,
+      phoneModel: checkPhoneModel(),
+      retweets: randomNumber(),
+      likes: randomNumber(),
     })
     changeDarkModeHandler()
   }
@@ -92,6 +101,18 @@ async function BuildApp ({ window, document }) {
   const changeDarkModeHandler = () => {
     const tweet = helpers.$('#tweet')
     changeDarkMode(darkModeBtn, tweet)
+  }
+
+  const checkPhoneModel = () => (phoneModelBtn.checked ? 'iPhone' : 'Android')
+
+  const changePhoneModelHandler = () => {
+    handleValuesChange()
+  }
+
+  const randomNumber = () => {
+    const generatedNumber =
+      Math.floor(Math.random() * (9999 - 10 + 1) + 10) / 10
+    return `${generatedNumber.toFixed(1)}k`
   }
 
   // if not available, remove button
@@ -116,6 +137,7 @@ async function BuildApp ({ window, document }) {
   tweetValue.addEventListener('keyup', handleTypingValuesChange)
   templateElement.addEventListener('change', handleValuesChange)
   darkModeBtn.addEventListener('change', changeDarkModeHandler)
+  phoneModelBtn.addEventListener('change', changePhoneModelHandler)
 
   const andRun = () => {
     createPeopleListAndAttach(persons, templateElement)
@@ -130,8 +152,9 @@ async function BuildApp ({ window, document }) {
       handleValuesChange,
       handleTypingValuesChange,
       cleanTextArea,
-      changeDarkMode
-    }
+      changeDarkMode,
+      changePhoneModelHandler,
+    },
   }
 }
 
