@@ -56,6 +56,7 @@
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
+- Xandão
 
 ### Como instalar
 

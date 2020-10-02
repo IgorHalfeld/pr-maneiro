@@ -251,6 +251,12 @@ const Persons = {
     username: 'bigsmokegangsta',
     msg: 'All we had to do was follow the damn Review, CJ!',
     image: 'https://i.imgur.com/ZCqTesr.jpg'
+  },
+  xandao: {
+    name: 'XANDAOGOD',
+    username: 'xandaogod',
+    msg: 'Relaxa que no fim do PR tem Xandão!',
+    image: 'https://i.imgur.com/efshqAn.jpg'
   }
 }
 
