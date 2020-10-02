@@ -16,6 +16,7 @@
 ### Templates já disponíveis
 
 - Arnaldo Cezar Coelho
+- Big Smoke
 - Cabo Daciolo
 - Carlos Bolsonaro
 - Celso Portiolli
