@@ -251,6 +251,11 @@ const Persons = {
     username: 'bigsmokegangsta',
     msg: 'All we had to do was follow the damn Review, CJ!',
     image: 'https://i.imgur.com/ZCqTesr.jpg'
+  },
+  manobrown: {
+    name: 'manobrown',
+    msg: 'Minha meta é dez, seu PR nem rola!',
+    image: 'https://i.imgur.com/9bQ58ho.jpg'
   }
 }
 
