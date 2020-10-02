@@ -1,78 +1,34 @@
-<p align="center">
-  <img src="icon.png" width="100" />
-  <h3 align="center">PR Maneiro 👍🏻</h3>
-  <p align="center">Faça alguém feliz com um comentário no PR!</p>
-  <p align="center">
-    <img src="https://travis-ci.org/IgorHalfeld/pr-maneiro.svg?branch=master" alt="Build Status">
-  </p>
-</p>
+# pr-maneiro
 
-<p align="center">
-  <img src="assets/demo-1.gif" width="500">
-<p>
-
-<hr />
-
-### Templates já disponíveis
-
-- Arnaldo Cezar Coelho
-- Cabo Daciolo
-- Carlos Bolsonaro
-- Celso Portiolli
-- Charlie Brown Jr
-- Chaves
-- Dado Dolabella
-- Darth Vader
-- Datena
-- Davy Jones
-- Dilma Rousseff
-- Donald J. Trump
-- Erick Jacquin
-- Everson Zóio
-- Faustão
-- Filipe Deschamps
-- Galvão Bueno
-- Gil Brother
-- Jailson Mendes
-- Jair M. Bolsonaro
-- Joel Santana
-- Kid Bengala
-- Kléber Bambam
-- Maike da S.W.A.T
-- Marcus Cirillo
-- Mano Brown
-- Marília Gabriela
-- Marina Silva
-- Neymar Jr
-- Nego Di
-- Padre Marcelo Rossi
-- Pedro Bial
-- PC Siqueira
-- Professor Raimundo
-- Ronaldinho Gaúcho
-- Stevie Wonder
-- Um Pistoleiro chamado Papaco
-- Vampeta
-- Yudi Tamashiro
-- Zeca Pagodinho
-
-### Como instalar
-
-Clone esse repositório e instale nas extensões do chrome, exemplo abaixo:
-
-![demo 2](assets/demo-2.gif)
-
-### Como adicionar mais alguém
-
-Coloque no arquivo [`persons.js`](https://github.com/IgorHalfeld/pr-maneiro/blob/master/scripts/persons.js) seguindo o padrão:
-
-```js
-ney: {
-  name: 'Neymar Jr',                               // nome (pode ter espaços)
-  username: 'neymarjr',                            // username
-  msg: 'Saudade do que a gente não viveu ainda!!', // mensagem do tweet
-  image: 'https://i.imgur.com/k2Uah9s.jpg'         // url da image (precisa usar o imgur.com)
-}
+## Project setup
+```
+npm install
 ```
 
-e não esqueça de adicionar [aqui na lista](https://github.com/IgorHalfeld/pr-maneiro#templates-j%C3%A1-dispon%C3%ADveis) desse README ❤️ pra galera ficar sabendo que o template existe.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
