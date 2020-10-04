@@ -8,11 +8,12 @@
   </p>
 </p>
 
-> ⚠️ Desenvolvimento ativo
+> ⚠️  Em ativo desenvolvimento
 
-## Project setup
+## Setup
 
 ```sh
+# install docs
 npm install
 
 # Compiles and hot-reloads for development
