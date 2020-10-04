@@ -23,7 +23,7 @@
               @{{ tweet.username }}
             </p>
           </div>
-          <span class="water-mark">@igorhalfeld/pr-maneiro</span>
+          <span class="water-mark">@igorhalfeld/pr-maneiro - v2.beta</span>
         </div>
         <div class="tweet-body">
           {{ tweet.msg }}
