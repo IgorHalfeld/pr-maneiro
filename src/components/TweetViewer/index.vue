@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center py-5 pr-20">
+  <div class="flex items-center py-5">
     <icon-chevron-left class="mr-5" />
 
     <div class="flex flex-col items-center w-full">
