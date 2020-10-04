@@ -2,7 +2,7 @@
   <main class="relative flex flex-col items-center justify-center w-full h-full px-12 py-5">
     <custom-header class="absolute top-0 w-full px-12 py-5 mx-auto xl:w-3/5" />
 
-    <div class="self-center w-full mt-12 xl:w-3/5 grid grid-cols-12 md:mt-0">
+    <div class="self-center w-full mt-56 xl:w-3/5 grid grid-cols-12 md:mt-0">
       <tweet-viewer
         class="col-span-12 md:col-span-8 md:mr-20"
         :tweet="state.currentTweet"

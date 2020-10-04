@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center py-5">
-    <icon-chevron-left class="mr-5" />
+    <icon-chevron-left class="hidden mr-5 md:block" />
 
     <div class="flex flex-col items-center w-full">
       <div
@@ -53,12 +53,12 @@
           <icon-share />
         </div>
       </div>
-      <p class="mt-10 text-brand-gray">
+      <p class="hidden mt-10 text-center text-brand-gray md:block">
         *Use as setas do teclado para explorar os templates
       </p>
     </div>
 
-    <icon-chevron-right class="ml-5" />
+    <icon-chevron-right class="hidden ml-5 md:block" />
   </div>
 </template>
 
