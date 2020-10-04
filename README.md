@@ -3,6 +3,7 @@
   <h3 align="center">PR Maneiro 👍🏻</h3>
   <p align="center">Faça alguém feliz com um comentário no PR!</p>
   <p align="center">
+    <img src="https://api.netlify.com/api/v1/badges/6c6af1cf-6b77-41cf-90cb-5060b5abbd79/deploy-status)](https://app.netlify.com/sites/prmaneiro/deploys" alt="Netlify Status">
     <img src="https://travis-ci.org/IgorHalfeld/pr-maneiro.svg?branch=master" alt="Build Status">
   </p>
 </p>
