@@ -2,50 +2,60 @@
   <div class="flex items-center py-5 pr-20">
     <icon-chevron-left class="mr-5" />
 
-    <div class="tweet">
-      <div class="flex items-center tweet-header">
-        <div
-          class="header-image"
-          style="background-image: url('https://lh3.googleusercontent.com/proxy/rPxG6uFxACntHFkrcc7r47pBDro3eqZhacujb5UPjl79gsxTATrqSfNS-UNyonk9vBGMbGnCrbqenUonQ_hGtacyQMjYjGnA5xDA57NDN0WLGu8rt748TA');"
-        />
-        <div class="flex flex-col header-info">
-          <h3 class="flex items-center text-lg font-bold">
-            Igor
-            <icon-verified />
-          </h3>
-          <p class="text-brand-gray">
-            @igorhalfeld
-          </p>
+    <div class="flex flex-col items-center w-full">
+      <div
+        ref="tweetRef"
+        class="tweet"
+      >
+        <div class="flex items-center tweet-header">
+          <div
+            class="header-image"
+            :style="{
+              backgroundImage: `url(${tweet.image})`
+            }"
+          />
+          <div class="flex flex-col header-info">
+            <h3 class="flex items-center -mb-1 text-lg font-bold">
+              {{ tweet.name }}
+              <icon-verified />
+            </h3>
+            <p class="text-brand-gray">
+              @{{ tweet.username }}
+            </p>
+          </div>
+          <span class="water-mark">@igorhalfeld/pr-maneiro</span>
         </div>
-        <span class="water-mark">@IgorHalfeld/pr-maneiro</span>
+        <div class="tweet-body">
+          {{ tweet.msg }}
+        </div>
+        <div class="tweet-label">
+          {{ state.date }} ·
+          <a
+            href="https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels"
+          >
+            Twitter for iPhone
+          </a>
+        </div>
+        <div class="flex tweet-analytics">
+          <span>
+            <strong>424.3k</strong>
+            Retweets
+          </span>
+          <span>
+            <strong>998.9k</strong>
+            Likes
+          </span>
+        </div>
+        <div class="flex justify-around tweet-actions">
+          <icon-reply />
+          <icon-retweet />
+          <icon-like />
+          <icon-share />
+        </div>
       </div>
-      <div class="tweet-body">
-        {{ currentTweet }}
-      </div>
-      <div class="tweet-label">
-        July 16, 2020 ·
-        <a
-          href="https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels"
-        >
-          Twitter for iPhone
-        </a>
-      </div>
-      <div class="flex tweet-analytics">
-        <span>
-          <strong>424.3k</strong>
-          Retweets
-        </span>
-        <span>
-          <strong>998.9k</strong>
-          Likes
-        </span>
-      </div>
-      <div class="flex justify-around tweet-actions">
-        <icon-reply />
-        <icon-retweet />
-        <icon-like />
-        <icon-share />
-      </div>
+      <p class="mt-10 text-brand-gray">
+        *Use as setas do teclado para explorar os templates
+      </p>
     </div>
 
     <icon-chevron-right class="ml-5" />
@@ -53,7 +63,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, watch, reactive, ref, onMounted } from 'vue'
 import IconVerified from '../IconVerified/index.vue'
 import IconReply from '../IconReply/index.vue'
 import IconRetweet from '../IconRetweet/index.vue'
@@ -61,9 +71,12 @@ import IconLike from '../IconLike/index.vue'
 import IconShare from '../IconShare/index.vue'
 import IconChevronLeft from '../IconChevronLeft/index.vue'
 import IconChevronRight from '../IconChevronRight/index.vue'
+import { Person } from '@/types'
+import { getCurrentTimeFormated } from '../../utils/date'
 
 type Props = {
-  currentTweet: string;
+  tweet: Person;
+  search: string;
 }
 
 export default defineComponent({
@@ -76,11 +89,32 @@ export default defineComponent({
     IconChevronRight,
     IconChevronLeft
   },
+  emits: ['tweet-update'],
   props: {
-    currentTweet: {
-      type: String as () => Props['currentTweet'],
+    tweet: {
+      type: Object as () => Props['tweet'],
       default: null
+    },
+    search: {
+      type: String as () => Props['search'],
+      default: ''
     }
+  },
+  setup (props: Props, { emit }) {
+    const tweetRef = ref(null)
+    const state = reactive({
+      date: getCurrentTimeFormated()
+    })
+
+    watch(() => props.search, () => {
+      emit('tweet-update', tweetRef)
+    })
+
+    onMounted(() => {
+      emit('tweet-update', tweetRef)
+    })
+
+    return { state, tweetRef }
   }
 })
 </script>

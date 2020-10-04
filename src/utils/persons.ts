@@ -247,5 +247,17 @@ export const Persons: { [key: string]: Person } = {
     username: 'dadodolabeIla',
     msg: 'Tu traiu o movimento Clean Code, véio!',
     image: 'https://i.imgur.com/YsLeAi9.jpg'
+  },
+  bigsmoke: {
+    name: 'Big Smoke',
+    username: 'bigsmokegangsta',
+    msg: 'All we had to do was follow the damn Review, CJ!',
+    image: 'https://i.imgur.com/ZCqTesr.jpg'
+  },
+  xandao: {
+    name: 'XANDAOGOD',
+    username: 'xandaogod',
+    msg: 'Relaxa que no fim do PR tem Xandão!',
+    image: 'https://i.imgur.com/efshqAn.jpg'
   }
 }
