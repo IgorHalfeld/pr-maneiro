@@ -5,6 +5,9 @@
   <p align="center">
     <img src="https://api.netlify.com/api/v1/badges/6c6af1cf-6b77-41cf-90cb-5060b5abbd79/deploy-status" alt="Netlify Status">
     <img src="https://travis-ci.org/IgorHalfeld/pr-maneiro.svg?branch=master" alt="Build Status">
+    <a href="http://picpay.me/igorhalfeld">
+      <img src="https://img.shields.io/badge/donate-picpay-green.svg" alt="Donate">
+    </a>
   </p>
 </p>
 
