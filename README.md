@@ -18,6 +18,7 @@
 ### Templates já disponíveis
 
 - Arnaldo Cezar Coelho
+- Big Smoke
 - Cabo Daciolo
 - Carlos Bolsonaro
 - Celso Portiolli
@@ -57,6 +58,7 @@
 - Vampeta
 - Yudi Tamashiro
 - Zeca Pagodinho
+- Xandão
 
 ### Como instalar
 
