@@ -13,6 +13,8 @@
 
 <hr />
 
+[**Versão 2 esta sendo desenvolvida, veja aqui**](https://github.com/IgorHalfeld/pr-maneiro/pull/72)
+
 ### Templates já disponíveis
 
 - Arnaldo Cezar Coelho
