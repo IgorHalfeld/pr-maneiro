@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "dom-to-image": "^2.6.0",
+    "gsap": "^3.5.1",
     "register-service-worker": "^1.7.1",
     "tailwindcss": "^1.8.10",
     "vue": "^3.0.0-0"

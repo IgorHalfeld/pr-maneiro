@@ -22,19 +22,80 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, Ref } from 'vue'
+import { gsap } from 'gsap'
 import CustomHeader from './components/CustomHeader/index.vue'
 import TweetViewer from './components/TweetViewer/index.vue'
 import Toolbar from './components/Toolbar/index.vue'
 import { useStore, setCurrentTweet, setTweetRef, setSearch } from './store'
-import { Person, Win } from './types'
+import { Person, Win, GSAP } from './types'
 import { Persons } from './utils/persons'
 import { buildCopyFn, buildDownloadFn } from './utils/domtoimage'
+
+interface AnimationHooks {
+  onExitFinish(): void;
+}
+const getHooksDefault = (): AnimationHooks => ({ onExitFinish: () => ({}) })
 
 const ARROW_RIGHT = 39
 const ARROW_LEFT = 37
 
 const copy = buildCopyFn(window as unknown as Win)
 const download = buildDownloadFn(document)
+
+function buildPreviousAnimateFn (g: GSAP) {
+  return (tweet: Ref, hooks?: AnimationHooks): void => {
+    const { onExitFinish } = hooks ?? getHooksDefault()
+
+    g.to(tweet, {
+      duration: 0.3,
+      ease: 'sine.out',
+      css: {
+        opacity: 0,
+        marginRight: '-200px'
+      },
+      onComplete () {
+        onExitFinish()
+
+        const from = { opacity: 0, marginRight: '200px' }
+        const to = {
+          duration: 0.3,
+          ease: 'sine.out',
+          css: { opacity: 1, marginRight: '0px' }
+        }
+        g.fromTo(tweet, from, to)
+      }
+    })
+  }
+}
+
+function buildNextAnimateFn (g: GSAP) {
+  return (tweet: Ref, hooks?: AnimationHooks): void => {
+    const { onExitFinish } = hooks ?? getHooksDefault()
+
+    g.to(tweet, {
+      duration: 0.3,
+      ease: 'sine.out',
+      css: {
+        opacity: 0,
+        marginLeft: '-200px'
+      },
+      onComplete () {
+        onExitFinish()
+
+        const from = { opacity: 0, marginLeft: '200px' }
+        const to = {
+          duration: 0.3,
+          ease: 'sine.out',
+          css: { opacity: 1, marginLeft: '0px' }
+        }
+        g.fromTo(tweet, from, to)
+      }
+    })
+  }
+}
+
+const animatePrevious = buildPreviousAnimateFn(gsap)
+const animateNext = buildNextAnimateFn(gsap)
 
 export default defineComponent({
   components: {
@@ -53,7 +114,9 @@ export default defineComponent({
       }
       currentIndex += 1
       const tweet = persons[currentIndex]
-      setCurrentTweet(tweet)
+      animateNext(store.tweetRef, {
+        onExitFinish: () => setCurrentTweet(tweet)
+      })
     }
 
     function previousTweet (): void {
@@ -62,7 +125,9 @@ export default defineComponent({
       }
       currentIndex -= 1
       const tweet = persons[currentIndex]
-      setCurrentTweet(tweet)
+      animatePrevious(store.tweetRef, {
+        onExitFinish: () => setCurrentTweet(tweet)
+      })
     }
 
     function handleKeyup (event: KeyboardEvent): void {

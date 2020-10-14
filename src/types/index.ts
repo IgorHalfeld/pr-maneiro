@@ -1,3 +1,5 @@
+import { gsap } from 'gsap'
+
 export type Person = {
   name: string;
   username: string;
@@ -21,3 +23,5 @@ export type Win = Window & {
   ClipboardItem: ClipboardItemConstructor;
   navigator: Navigator;
 };
+
+export type GSAP = typeof gsap;
