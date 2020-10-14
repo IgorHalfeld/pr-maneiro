@@ -89,7 +89,6 @@ export default defineComponent({
     IconChevronRight,
     IconChevronLeft
   },
-  emits: ['tweet-update'],
   props: {
     tweet: {
       type: Object as () => Props['tweet'],
@@ -100,6 +99,7 @@ export default defineComponent({
       default: ''
     }
   },
+  emits: ['tweet-update'],
   setup (props: Props, { emit }) {
     const tweetRef = ref(null)
     const state = reactive({
