@@ -8,6 +8,8 @@
         :tweet="state.currentTweet"
         :search="state.search"
         @tweet-update="handleTweetUpdate"
+        @next="nextTweet"
+        @previous="previousTweet"
       />
       <toolbar
         class="col-span-12 md:col-span-4"
@@ -16,6 +18,13 @@
         @copy="handleCopy"
         @download="handleDownload"
       />
+
+      <div>
+        <a
+          href=""
+          class="links"
+        />
+      </div>
     </div>
   </main>
 </template>
@@ -109,10 +118,7 @@ export default defineComponent({
     let currentIndex = 0
 
     function nextTweet (): void {
-      if (currentIndex >= (persons.length - 1)) {
-        return
-      }
-      currentIndex += 1
+      currentIndex = currentIndex >= persons.length - 1 ? 0 : currentIndex += 1
       const tweet = persons[currentIndex]
       animateNext(store.tweetRef, {
         onExitFinish: () => setCurrentTweet(tweet)
@@ -120,10 +126,7 @@ export default defineComponent({
     }
 
     function previousTweet (): void {
-      if (currentIndex <= 0) {
-        return
-      }
-      currentIndex -= 1
+      currentIndex = currentIndex <= 0 ? persons.length - 1 : currentIndex -= 1
       const tweet = persons[currentIndex]
       animatePrevious(store.tweetRef, {
         onExitFinish: () => setCurrentTweet(tweet)
@@ -185,7 +188,9 @@ export default defineComponent({
       handleTemplateChange,
       handleTweetUpdate,
       handleDownload,
-      handleCopy
+      handleCopy,
+      nextTweet,
+      previousTweet
     }
   }
 })

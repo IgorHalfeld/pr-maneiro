@@ -7,6 +7,16 @@
       <p class="text-sm font-medium md:text-base text-brand-black">
         Faça alguém feliz com um comentário no Pull Request.
       </p>
+      <p class="text-sm font-small md:text-base text-brand-black">
+        <a
+          class="flex flex-row"
+          href="https://github.com/IgorHalfeld/pr-maneiro"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <icon-github class="mr-1" />PR Maneiro
+        </a>
+      </p>
     </div>
 
     <div class="w-24">
@@ -20,7 +30,11 @@
 </template>
 
 <script>
-export default {
+import IconGithub from '../IconGithub/index.vue'
 
+export default {
+  components: {
+    IconGithub
+  }
 }
 </script>
