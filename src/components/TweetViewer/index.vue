@@ -218,12 +218,6 @@ export default defineComponent({
   fill: #00a1f9;
 }
 
-.tweet-next:hover.disabled,
-.tweet-previous:hover.disabled {
-  fill:#A8A8A8;
-  fill-opacity: .5;
-}
-
 .dark-mode .tweet-analytics span strong {
   color: var(--color-text-dark-mode);
 }

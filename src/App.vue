@@ -18,13 +18,6 @@
         @copy="handleCopy"
         @download="handleDownload"
       />
-
-      <div>
-        <a
-          href=""
-          class="links"
-        />
-      </div>
     </div>
   </main>
 </template>
