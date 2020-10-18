@@ -18,14 +18,9 @@
         @copy="handleCopy"
         @download="handleDownload"
       />
-
-      <div>
-        <a
-          href=""
-          class="links"
-        />
-      </div>
     </div>
+
+    <custom-footer class="absolute bottom-0 w-full px-12 py-5 flex justify-end" />
   </main>
 </template>
 
@@ -33,6 +28,7 @@
 import { defineComponent, onMounted, onUnmounted, Ref } from 'vue'
 import { gsap } from 'gsap'
 import CustomHeader from './components/CustomHeader/index.vue'
+import CustomFooter from './components/CustomFooter/index.vue'
 import TweetViewer from './components/TweetViewer/index.vue'
 import Toolbar from './components/Toolbar/index.vue'
 import { useStore, setCurrentTweet, setTweetRef, setSearch } from './store'
@@ -109,6 +105,7 @@ const animateNext = buildNextAnimateFn(gsap)
 export default defineComponent({
   components: {
     CustomHeader,
+    CustomFooter,
     TweetViewer,
     Toolbar
   },
