@@ -168,6 +168,7 @@ export default defineComponent({
     }
 
     function handleTouch (event: TouchEvent): void {
+      event.preventDefault()
       const width = event?.view?.innerWidth || 0
       const touched = event?.targetTouches[0]
       touched?.clientX > width / 2 ? nextTweet() : previousTweet()
@@ -176,13 +177,13 @@ export default defineComponent({
     onMounted(() => {
       window.addEventListener('keyup', handleKeyup)
 
-      store.tweetRef.addEventListener('touchstart', handleTouch, false)
+      store.tweetRef.addEventListener('touchstart', handleTouch)
     })
 
     onUnmounted(() => {
       window.removeEventListener('keyup', handleKeyup)
 
-      store.tweetRef.removeEventListener('touchstart', handleTouch, false)
+      store.tweetRef.removeEventListener('touchstart', handleTouch)
     })
 
     return {
