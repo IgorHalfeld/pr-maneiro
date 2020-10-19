@@ -10,7 +10,7 @@
         ref="tweetRef"
         class="tweet"
       >
-        <div class="flex items-center tweet-header">
+        <div class="flex flex-wrap items-center tweet-header">
           <div
             class="header-image"
             :style="{
@@ -112,6 +112,10 @@ export default defineComponent({
       date: getCurrentTimeFormated()
     })
 
+    const onPrevious = () => emit('previous')
+
+    const onNext = () => emit('next')
+
     watch(() => props.search, () => {
       emit('tweet-update', tweetRef)
     })
@@ -119,10 +123,6 @@ export default defineComponent({
     onMounted(() => {
       emit('tweet-update', tweetRef)
     })
-
-    const onPrevious = () => emit('previous')
-
-    const onNext = () => emit('next')
 
     return { state, tweetRef, onPrevious, onNext }
   }

@@ -17,19 +17,19 @@
       />
     </label>
 
-    <div class="flex flex-col items-center mt-6">
+    <div class="flex flex-col items-center mt-6 actions">
       <div>
         <button
-          class="px-8 py-3 text-lg font-bold text-white uppercase rounded bg-brand-primary focus:outline-none"
+          class="px-8 py-3 text-lg font-bold text-white uppercase rounded bg-brand-primary focus:outline-none copy-tweet"
           @click="handleCopy"
         >
           {{ state.copyLabel }}
         </button>
       </div>
-      <span class="font-light text-brand-gray">ou</span>
+      <span class="font-light text-brand-gray divider">ou</span>
       <div>
         <button
-          class="font-bold text-brand-gray focus:outline-none"
+          class="font-bold text-brand-gray focus:outline-none download-img"
           @click="handleDownload"
         >
           baixe a imagem
@@ -92,3 +92,30 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+@media (max-width: 640px) {
+  .actions {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .copy-tweet {
+    font-size: 1rem;
+  }
+
+  .download-img {
+    padding: 0.75rem 2rem;
+    color: #ffffff;
+    background-color: #27A1F9;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+</style>
