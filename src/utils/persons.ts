@@ -259,5 +259,11 @@ export const Persons: { [key: string]: Person } = {
     username: 'xandaogod',
     msg: 'Relaxa que no fim do PR tem Xandão!',
     image: 'https://i.imgur.com/efshqAn.jpg'
+  },
+  chewbacca: {
+    name: 'Chewbacca',
+    username: 'chewbacca',
+    msg: 'hnnnhrrhhh awwgggghhh wrrhwrwwhw!',
+    image: 'https://i.imgur.com/b8Xw46P.jpeg'
   }
 }
