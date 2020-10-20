@@ -264,6 +264,6 @@ export const Persons: { [key: string]: Person } = {
     name: 'Chewbacca',
     username: 'chewbacca',
     msg: 'hnnnhrrhhh awwgggghhh wrrhwrwwhw!',
-    image: 'https://pbs.twimg.com/profile_images/3721439874/a5b004bc781b06188c91262198563c5d_400x400.jpeg'
+    image: 'https://i.imgur.com/b8Xw46P.jpeg'
   }
 }
