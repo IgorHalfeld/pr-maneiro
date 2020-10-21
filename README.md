@@ -39,6 +39,7 @@
 - Jailson Mendes
 - Jair M. Bolsonaro
 - Joel Santana
+- Julius - Everybody Hates Chris
 - Kid Bengala
 - Kléber Bambam
 - Maike da S.W.A.T
