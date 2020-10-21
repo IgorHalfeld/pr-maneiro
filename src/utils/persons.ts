@@ -260,6 +260,12 @@ export const Persons: { [key: string]: Person } = {
     msg: 'Relaxa que no fim do PR tem Xandão!',
     image: 'https://i.imgur.com/efshqAn.jpg'
   },
+  julius: {
+    name: 'Julius - Everybody Hates Chris',
+    username: 'julius',
+    msg: 'Esse PR me custou 25 linhas de código',
+    image: 'https://i.imgur.com/xKPVD0w.jpg'
+  },
   chewbacca: {
     name: 'Chewbacca',
     username: 'chewbacca',
