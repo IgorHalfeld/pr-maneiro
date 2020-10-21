@@ -1,25 +1,29 @@
 module.exports = {
+  root: true,
   env: {
-    browser: true,
-    es6: true,
-    'jest/globals': true
+    node: true
   },
   extends: [
-    'standard'
+    'plugin:vue/vue3-recommended',
+    '@vue/standard',
+    '@vue/typescript/recommended'
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
-  },
-  plugins: ['jest'],
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2020
   },
   rules: {
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
-  }
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+  },
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+      ],
+      env: {
+        jest: true
+      }
+    }
+  ]
 }

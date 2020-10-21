@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="icon.png" width="100" />
+  <img src="src/assets/icon.png" width="100" />
   <h3 align="center">PR Maneiro 👍🏻</h3>
   <p align="center">Faça alguém feliz com um comentário no PR!</p>
   <p align="center">
+    <img src="https://api.netlify.com/api/v1/badges/6c6af1cf-6b77-41cf-90cb-5060b5abbd79/deploy-status" alt="Netlify Status">
     <img src="https://travis-ci.org/IgorHalfeld/pr-maneiro.svg?branch=master" alt="Build Status">
+    <a href="http://picpay.me/igorhalfeld">
+      <img src="https://img.shields.io/badge/donate-picpay-green.svg" alt="Donate">
+    </a>
   </p>
 </p>
 
-<p align="center">
-  <img src="assets/demo-1.gif" width="500">
-<p>
-
-<hr />
+> ⚠️ Em ativo desenvolvimento
 
 [**Versão 2 esta sendo desenvolvida, veja aqui**](https://github.com/IgorHalfeld/pr-maneiro/pull/72)
 
@@ -61,23 +61,24 @@
 - Zeca Pagodinho
 - Xandão
 
-### Como instalar
+## Setup
 
-Clone esse repositório e instale nas extensões do chrome, exemplo abaixo:
+```sh
+# install docs
+npm install
 
-![demo 2](assets/demo-2.gif)
+# Compiles and hot-reloads for development
+npm run serve
 
-### Como adicionar mais alguém
+# Compiles and minifies for production
+npm run build
 
-Coloque no arquivo [`persons.js`](https://github.com/IgorHalfeld/pr-maneiro/blob/master/scripts/persons.js) seguindo o padrão:
+# Run your unit tests
+npm run test:unit
 
-```js
-ney: {
-  name: 'Neymar Jr',                               // nome (pode ter espaços)
-  username: 'neymarjr',                            // username
-  msg: 'Saudade do que a gente não viveu ainda!!', // mensagem do tweet
-  image: 'https://i.imgur.com/k2Uah9s.jpg'         // url da image (precisa usar o imgur.com)
-}
+# Run your end-to-end tests
+npm run test:e2e
+
+# Lints and fixes files
+npm run lint
 ```
-
-e não esqueça de adicionar [aqui na lista](https://github.com/IgorHalfeld/pr-maneiro#templates-j%C3%A1-dispon%C3%ADveis) desse README ❤️ pra galera ficar sabendo que o template existe.

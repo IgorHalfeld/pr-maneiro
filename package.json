@@ -1,44 +1,53 @@
 {
   "name": "pr-maneiro",
-  "version": "1.0.0",
-  "description": "Faça alguém feliz com um comentário no PR!",
-  "main": "main.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --ext .js scripts"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IgorHalfeld/pr-maneiro.git"
+  "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "gsap": "^3.5.1",
+    "register-service-worker": "^1.7.1",
+    "tailwindcss": "^1.8.10",
+    "vue": "^3.0.0-0"
   },
-  "keywords": [
-    "pr",
-    "maneiro",
-    "pull",
-    "request"
-  ],
-  "author": "Igor Halfeld <hello@igorluiz.me>",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/IgorHalfeld/pr-maneiro/issues"
-  },
-  "homepage": "https://github.com/IgorHalfeld/pr-maneiro#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.24",
-    "@types/node": "^12.12.21",
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-0",
     "eslint": "^6.7.2",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-jest": "^23.1.1",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.1.0",
-    "jest": "^24.9.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "lint-staged": "^9.5.0",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm test"
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
