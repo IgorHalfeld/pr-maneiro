@@ -1,13 +1,16 @@
 <template>
   <div class="flex items-center py-5">
-    <icon-chevron-left class="hidden mr-5 md:block" />
+    <icon-chevron-left
+      class="hidden mr-5 md:block tweet-previous"
+      @click="onPrevious"
+    />
 
     <div class="flex flex-col items-center w-full">
       <div
         ref="tweetRef"
         class="tweet"
       >
-        <div class="flex items-center tweet-header">
+        <div class="flex flex-wrap items-center tweet-header">
           <div
             class="header-image"
             :style="{
@@ -53,12 +56,15 @@
           <icon-share />
         </div>
       </div>
-      <p class="hidden mt-10 text-center text-brand-gray md:block">
+      <p class="hidden mt-4 text-center text-brand-gray md:block">
         *Use as setas do teclado para explorar os templates
       </p>
     </div>
 
-    <icon-chevron-right class="hidden ml-5 md:block" />
+    <icon-chevron-right
+      class="hidden ml-5 md:block tweet-next"
+      @click="onNext"
+    />
   </div>
 </template>
 
@@ -99,12 +105,16 @@ export default defineComponent({
       default: ''
     }
   },
-  emits: ['tweet-update'],
+  emits: ['tweet-update', 'previous', 'next'],
   setup (props: Props, { emit }) {
     const tweetRef = ref(null)
     const state = reactive({
       date: getCurrentTimeFormated()
     })
+
+    const onPrevious = () => emit('previous')
+
+    const onNext = () => emit('next')
 
     watch(() => props.search, () => {
       emit('tweet-update', tweetRef)
@@ -114,7 +124,7 @@ export default defineComponent({
       emit('tweet-update', tweetRef)
     })
 
-    return { state, tweetRef }
+    return { state, tweetRef, onPrevious, onNext }
   }
 })
 </script>
@@ -197,6 +207,17 @@ export default defineComponent({
 .tweet-analytics span strong {
   color: var(--color-text1);
 }
+
+.tweet-next,
+.tweet-previous {
+  cursor: pointer;
+}
+
+.tweet-next:hover,
+.tweet-previous:hover {
+  fill: #00a1f9;
+}
+
 .dark-mode .tweet-analytics span strong {
   color: var(--color-text-dark-mode);
 }

@@ -1,13 +1,15 @@
 <template>
-  <main class="relative flex flex-col items-center justify-center w-full h-full px-12 py-5">
-    <custom-header class="absolute top-0 w-full px-12 py-5 mx-auto xl:w-3/5" />
+  <custom-header class="w-full px-4 md:px-12 py-5 mx-auto xl:w-3/5" />
 
-    <div class="self-center w-full mt-56 xl:w-3/5 grid grid-cols-12 md:mt-0">
+  <main class="flex flex-col items-center justify-center w-full px-4 md:px-12 py-5">
+    <div class="self-center w-full xl:w-3/5 grid grid-cols-12">
       <tweet-viewer
         class="col-span-12 md:col-span-8 md:mr-20"
         :tweet="state.currentTweet"
         :search="state.search"
         @tweet-update="handleTweetUpdate"
+        @next="nextTweet"
+        @previous="previousTweet"
       />
       <toolbar
         class="col-span-12 md:col-span-4"
@@ -109,10 +111,7 @@ export default defineComponent({
     let currentIndex = 0
 
     function nextTweet (): void {
-      if (currentIndex >= (persons.length - 1)) {
-        return
-      }
-      currentIndex += 1
+      currentIndex = currentIndex >= persons.length - 1 ? 0 : currentIndex += 1
       const tweet = persons[currentIndex]
       animateNext(store.tweetRef, {
         onExitFinish: () => setCurrentTweet(tweet)
@@ -120,10 +119,7 @@ export default defineComponent({
     }
 
     function previousTweet (): void {
-      if (currentIndex <= 0) {
-        return
-      }
-      currentIndex -= 1
+      currentIndex = currentIndex <= 0 ? persons.length - 1 : currentIndex -= 1
       const tweet = persons[currentIndex]
       animatePrevious(store.tweetRef, {
         onExitFinish: () => setCurrentTweet(tweet)
@@ -171,12 +167,23 @@ export default defineComponent({
       setCurrentTweet(template)
     }
 
+    function handleTouch (event: TouchEvent): void {
+      event.preventDefault()
+      const width = event?.view?.innerWidth || 0
+      const touched = event?.targetTouches[0]
+      touched?.clientX > width / 2 ? nextTweet() : previousTweet()
+    }
+
     onMounted(() => {
       window.addEventListener('keyup', handleKeyup)
+
+      store.tweetRef.addEventListener('touchstart', handleTouch)
     })
 
     onUnmounted(() => {
       window.removeEventListener('keyup', handleKeyup)
+
+      store.tweetRef.removeEventListener('touchstart', handleTouch)
     })
 
     return {
@@ -185,7 +192,9 @@ export default defineComponent({
       handleTemplateChange,
       handleTweetUpdate,
       handleDownload,
-      handleCopy
+      handleCopy,
+      nextTweet,
+      previousTweet
     }
   }
 })
