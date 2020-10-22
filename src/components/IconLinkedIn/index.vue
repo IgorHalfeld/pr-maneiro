@@ -3,7 +3,7 @@
     width="24"
     height="24"
     viewBox="0 0 24 24"
-    fill="#A8A8A8"
+    fill="#0077b5"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path

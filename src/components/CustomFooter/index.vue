@@ -101,35 +101,14 @@ footer svg {
   margin-left: 1.5rem;
 }
 
-.github {
-  fill: #000000;
-}
-
-.twitter {
-  fill: #00a1f9;
-}
-
-.youtube {
-  fill: #ff0000;
-}
-
-.twitch {
-  fill: #9c1edf;
-}
-
-.linkedin {
-  fill: #0077b5;
-}
-
-.blog {
-  fill: #9c1edf80;
-}
-
+.github
+.twitter
+.youtube
+.twitch
+.linkedin
+.blog,
 .instagram {
-    fill: #ffffff;
-    background-image: linear-gradient(to right, #ffb140, #ff5445, #fc2b82,#8e40b7 );
-    border: 1px solid #ffffff;
-    border-radius: 15%;
-    padding: 5px;
+  fill: #A8A8A8;
 }
+
 </style>

@@ -1,4 +1,5 @@
 <template>
+  <!-- background-image: linear-gradient(to right, #ffb140, #ff5445, #fc2b82,#8e40b7 ); -->
   <svg
     width="24"
     height="24"

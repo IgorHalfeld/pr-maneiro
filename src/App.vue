@@ -20,7 +20,7 @@
       />
     </div>
 
-    <custom-footer class="absolute bottom-0 w-full px-12 py-5 flex justify-end" />
+    <custom-footer class="absolute bottom-0 w-full px-12 py-5 flex justify-center" />
   </main>
 </template>
 
