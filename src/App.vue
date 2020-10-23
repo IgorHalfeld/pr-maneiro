@@ -31,6 +31,9 @@ import { Person, Win, GSAP } from './types'
 import { Persons } from './utils/persons'
 import { buildCopyFn, buildDownloadFn } from './utils/domtoimage'
 
+import { prefersDark } from './utils/prefers-dark'
+prefersDark()
+
 interface AnimationHooks {
   onExitFinish(): void;
 }
