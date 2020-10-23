@@ -1,5 +1,5 @@
 <template>
-  <main class="relative flex flex-col items-center justify-center w-full h-full px-12 py-5">
+  <main class="relative flex flex-col items-center justify-center w-full h-full px-12 py-5 dark:bg-gray-800">
     <custom-header class="absolute top-0 w-full px-12 py-5 mx-auto xl:w-3/5" />
 
     <div class="self-center w-full mt-56 xl:w-3/5 grid grid-cols-12 md:mt-0">
