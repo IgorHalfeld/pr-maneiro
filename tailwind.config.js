@@ -792,6 +792,9 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-    require('@tailwindcss/custom-forms')
+    require('@tailwindcss/custom-forms'),
+    // see: https://github.com/ChanceArthur/tailwindcss-dark-mode#installation
+    // eslint-disable-next-line
+    require('tailwindcss-dark-mode')()
   ]
 }
