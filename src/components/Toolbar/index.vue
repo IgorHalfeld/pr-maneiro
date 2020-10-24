@@ -1,7 +1,7 @@
 <template>
-  <aside class="flex flex-col p-5 rounded bg-brand-secondary">
+  <aside class="flex flex-col p-5 rounded bg-brand-secondary dark:bg-gray-700">
     <label class="block">
-      <span class="text-lg font-semibold text-gray-700">Coloque seu tweet 😍</span>
+      <span class="text-lg font-semibold text-gray-700 dark:text-brand-secondary">Coloque seu tweet 😍</span>
       <textarea
         v-model="state.text"
         class="block w-full mt-1 text-gray-700 border-0 form-input"
@@ -10,7 +10,7 @@
     </label>
 
     <label class="block mt-6">
-      <span class="text-lg font-semibold text-gray-700">Template</span>
+      <span class="text-lg font-semibold text-gray-700 dark:text-brand-secondary">Template</span>
       <template-auto-complete
         class="block w-full mt-1"
         @item-click="handleTweetSelect"
@@ -20,16 +20,16 @@
     <div class="flex flex-col items-center mt-10">
       <div>
         <button
-          class="px-8 py-3 text-lg font-bold text-white uppercase rounded bg-brand-primary focus:outline-none"
+          class="px-8 py-3 text-lg font-bold text-white uppercase rounded bg-brand-primary dark:bg-brand-accent focus:outline-none"
           @click="handleCopy"
         >
           {{ state.copyLabel }}
         </button>
       </div>
-      <span class="font-light text-brand-gray">ou</span>
+      <span class="font-light text-brand-gray dark:text-brand-secondary">ou</span>
       <div>
         <button
-          class="font-bold text-brand-gray focus:outline-none"
+          class="font-bold text-brand-gray dark:text-brand-secondary focus:outline-none"
           @click="handleDownload"
         >
           baixe a imagem
