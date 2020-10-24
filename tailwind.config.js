@@ -5,7 +5,8 @@ module.exports = {
   },
   purge: [
     './public/**/*.html',
-    './src/**/*.vue'
+    './src/**/*.vue',
+    './src/utils/prefers-dark.ts'
   ],
   target: 'relaxed',
   prefix: '',
