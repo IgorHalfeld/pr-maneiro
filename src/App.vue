@@ -121,7 +121,10 @@ export default defineComponent({
       currentIndex = currentIndex >= persons.length - 1 ? 0 : currentIndex += 1
       const tweet = persons[currentIndex]
       animateNext(store.tweetRef, {
-        onExitFinish: () => setCurrentTweet(tweet)
+        onExitFinish: () => setCurrentTweet({
+          ...tweet,
+          msg: store.search.length ? store.search : tweet.msg
+        })
       })
     }
 
@@ -129,7 +132,10 @@ export default defineComponent({
       currentIndex = currentIndex <= 0 ? persons.length - 1 : currentIndex -= 1
       const tweet = persons[currentIndex]
       animatePrevious(store.tweetRef, {
-        onExitFinish: () => setCurrentTweet(tweet)
+        onExitFinish: () => setCurrentTweet({
+          ...tweet,
+          msg: store.search.length ? store.search : tweet.msg
+        })
       })
     }
 
