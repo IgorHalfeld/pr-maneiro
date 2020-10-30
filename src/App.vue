@@ -177,7 +177,10 @@ export default defineComponent({
     }
 
     function handleTemplateChange (template: Person): void {
-      setCurrentTweet(template)
+      setCurrentTweet({
+        ...template,
+        msg: store.search.length ? store.search : template.msg
+      })
     }
 
     onMounted(() => {
