@@ -38,6 +38,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-0",
     "lint-staged": "^9.5.0",
+    "tailwindcss-dark-mode": "^1.1.7",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
   },

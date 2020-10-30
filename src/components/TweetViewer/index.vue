@@ -56,7 +56,7 @@
           <icon-share />
         </div>
       </div>
-      <p class="hidden mt-4 text-center text-brand-gray md:block">
+      <p class="hidden mt-4 text-center text-brand-gray dark:text-brand-secondary md:block">
         *Use as setas do teclado para explorar os templates
       </p>
     </div>

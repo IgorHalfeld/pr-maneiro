@@ -13,7 +13,7 @@
 
     <div
       v-if="state.completeIsOpen"
-      class="absolute top-0 left-0 flex flex-col w-full mt-10 bg-white rounded-bl-md rounded-br-md animated fadeIn faster"
+      class="absolute top-0 left-0 flex flex-col w-full mt-10 bg-white dark:bg-gray-600 rounded-bl-md rounded-br-md animated fadeIn faster"
     >
       <div
         v-for="(person, index) in state.persons"
@@ -21,11 +21,11 @@
         :class="{
           'mt-3': !index
         }"
-        class="flex flex-col px-5 py-2 font-medium text-left text-gray-600 cursor-pointer text-md"
+        class="flex flex-col px-5 py-2 font-medium text-left text-gray-600 dark:text-white cursor-pointer text-md"
         @click="() => handleAutoCompleteClick(person)"
       >
         {{ person.name }}
-        <span class="text-sm text-gray-500 font-lightitalic">@{{ person.username }}</span>
+        <span class="text-sm text-gray-500 dark:text-gray-100 font-lightitalic">@{{ person.username }}</span>
       </div>
     </div>
   </div>

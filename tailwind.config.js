@@ -5,7 +5,8 @@ module.exports = {
   },
   purge: [
     './public/**/*.html',
-    './src/**/*.vue'
+    './src/**/*.vue',
+    './src/utils/prefers-dark.ts'
   ],
   target: 'relaxed',
   prefix: '',
@@ -27,6 +28,7 @@ module.exports = {
 
       brand: {
         primary: '#27A1F9',
+        accent: '#309be8',
         secondary: '#F4F4F4',
         black: '#585858',
         gray: '#999999',
@@ -686,7 +688,7 @@ module.exports = {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
     backgroundClip: ['responsive'],
-    backgroundColor: ['responsive', 'hover', 'focus'],
+    backgroundColor: ['dark', 'responsive', 'hover', 'focus'],
     backgroundImage: ['responsive'],
     gradientColorStops: ['responsive', 'hover', 'focus'],
     backgroundOpacity: ['responsive', 'hover', 'focus'],
@@ -757,7 +759,7 @@ module.exports = {
     strokeWidth: ['responsive'],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColor: ['responsive', 'hover', 'focus'],
+    textColor: ['dark', 'responsive', 'hover', 'focus'],
     textOpacity: ['responsive', 'hover', 'focus'],
     textDecoration: ['responsive', 'hover', 'focus'],
     textTransform: ['responsive'],
@@ -792,6 +794,9 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-    require('@tailwindcss/custom-forms')
+    require('@tailwindcss/custom-forms'),
+    // see: https://github.com/ChanceArthur/tailwindcss-dark-mode#installation
+    // eslint-disable-next-line
+    require('tailwindcss-dark-mode')()
   ]
 }
