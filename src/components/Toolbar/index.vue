@@ -17,7 +17,7 @@
       />
     </label>
 
-    <div class="flex flex-col items-center mt-10">
+    <div class="flex flex-col items-center mt-6">
       <div>
         <button
           class="px-8 py-3 text-lg font-bold text-white uppercase rounded bg-brand-primary focus:outline-none"
