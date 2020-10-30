@@ -50,6 +50,7 @@
 - Neymar Jr
 - Nego Di
 - Padre Marcelo Rossi
+- Pabllo Vittar
 - Pedro Bial
 - PC Siqueira
 - Professor Raimundo
