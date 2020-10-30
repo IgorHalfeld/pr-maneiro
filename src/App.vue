@@ -172,7 +172,7 @@ export default defineComponent({
         tweet.msg = match?.msg ?? msg
       }
 
-      setSearch(tweet.msg)
+      setSearch(msg)
       setCurrentTweet(tweet)
     }
 
