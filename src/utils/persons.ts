@@ -272,13 +272,10 @@ export const Persons: { [key: string]: Person } = {
     msg: 'hnnnhrrhhh awwgggghhh wrrhwrwwhw!',
     image: 'https://i.imgur.com/b8Xw46P.jpeg'
   },
-pabllovittar: {
-  name: 'Pabllo Vittar',
-  username: 'pabllovittar',
-  msg: 'A previsao do tempo diz que seu PR fechoooou 🎶, YUKÊ',
-  image: 'https://i.imgur.com/Rzj5M94.jpeg'
+  pabllovittar: {
+    name: 'Pabllo Vittar',
+    username: 'pabllovittar',
+    msg: 'A previsao do tempo diz que seu PR fechoooou 🎶, YUKÊ',
+    image: 'https://i.imgur.com/Rzj5M94.jpeg'
+  }
 }
-}
-
-
-
