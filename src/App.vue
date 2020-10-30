@@ -8,6 +8,8 @@
         :tweet="state.currentTweet"
         :search="state.search"
         @tweet-update="handleTweetUpdate"
+        @next="nextTweet"
+        @previous="previousTweet"
       />
       <toolbar
         class="col-span-12 md:col-span-4"
@@ -17,6 +19,8 @@
         @download="handleDownload"
       />
     </div>
+
+    <custom-footer class="absolute bottom-0 w-full px-12 py-5 flex justify-center" />
   </main>
 </template>
 
@@ -24,6 +28,7 @@
 import { defineComponent, onMounted, onUnmounted, Ref } from 'vue'
 import { gsap } from 'gsap'
 import CustomHeader from './components/CustomHeader/index.vue'
+import CustomFooter from './components/CustomFooter/index.vue'
 import TweetViewer from './components/TweetViewer/index.vue'
 import Toolbar from './components/Toolbar/index.vue'
 import { useStore, setCurrentTweet, setTweetRef, setSearch } from './store'
@@ -103,6 +108,7 @@ const animateNext = buildNextAnimateFn(gsap)
 export default defineComponent({
   components: {
     CustomHeader,
+    CustomFooter,
     TweetViewer,
     Toolbar
   },
@@ -112,10 +118,7 @@ export default defineComponent({
     let currentIndex = 0
 
     function nextTweet (): void {
-      if (currentIndex >= (persons.length - 1)) {
-        return
-      }
-      currentIndex += 1
+      currentIndex = currentIndex >= persons.length - 1 ? 0 : currentIndex += 1
       const tweet = persons[currentIndex]
       animateNext(store.tweetRef, {
         onExitFinish: () => setCurrentTweet(tweet)
@@ -123,10 +126,7 @@ export default defineComponent({
     }
 
     function previousTweet (): void {
-      if (currentIndex <= 0) {
-        return
-      }
-      currentIndex -= 1
+      currentIndex = currentIndex <= 0 ? persons.length - 1 : currentIndex -= 1
       const tweet = persons[currentIndex]
       animatePrevious(store.tweetRef, {
         onExitFinish: () => setCurrentTweet(tweet)
@@ -188,7 +188,9 @@ export default defineComponent({
       handleTemplateChange,
       handleTweetUpdate,
       handleDownload,
-      handleCopy
+      handleCopy,
+      nextTweet,
+      previousTweet
     }
   }
 })
