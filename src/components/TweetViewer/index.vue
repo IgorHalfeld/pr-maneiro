@@ -36,7 +36,7 @@
           <a
             href="https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels"
           >
-            Twitter for iPhone
+            Twitter for {{ tweet.source === Source.iphone ? 'iPhone' : 'Android' }}
           </a>
         </div>
         <div class="flex tweet-analytics">
@@ -77,7 +77,7 @@ import IconLike from '../IconLike/index.vue'
 import IconShare from '../IconShare/index.vue'
 import IconChevronLeft from '../IconChevronLeft/index.vue'
 import IconChevronRight from '../IconChevronRight/index.vue'
-import { Person } from '@/types'
+import { Person, Source } from '@/types'
 import { getCurrentTimeFormated } from '../../utils/date'
 
 type Props = {
@@ -124,7 +124,13 @@ export default defineComponent({
 
     const onNext = () => emit('next')
 
-    return { state, tweetRef, onPrevious, onNext }
+    return {
+      state,
+      tweetRef,
+      onPrevious,
+      onNext,
+      Source
+    }
   }
 })
 </script>

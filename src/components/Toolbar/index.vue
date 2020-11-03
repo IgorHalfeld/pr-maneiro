@@ -9,6 +9,15 @@
       />
     </label>
 
+    <div class="flex flex-col mt-6">
+      <switch-box
+        :checked="{ value: Source.iphone, label: 'iPhone' }"
+        :unchecked="{ value: Source.android, label: 'Android' }"
+        :value="state.source"
+        @change="state.source = $event"
+      />
+    </div>
+
     <label class="block mt-6">
       <span class="text-lg font-semibold text-gray-700 dark:text-brand-secondary">Template</span>
       <template-auto-complete
@@ -42,28 +51,35 @@
 <script lang="ts">
 import { defineComponent, reactive, watch } from 'vue'
 import { setCurrentTweet } from '../../store'
-import { Person } from '../../types'
+import { Person, Source } from '../../types'
 import { Persons } from '../../utils/persons'
 import TemplateAutoComplete from '../TemplateAutoComplete/index.vue'
+import SwitchBox from '../SwitchBox/index.vue'
 
 type State = {
   persons: Person[];
   copyLabel: string;
   text: string;
+  source: Source;
 }
 
 export default defineComponent({
-  components: { TemplateAutoComplete },
-  emits: ['tweet-message-change', 'template-change', 'copy', 'download'],
+  components: { TemplateAutoComplete, SwitchBox },
+  emits: ['tweet-message-change', 'tweet-source-change', 'template-change', 'copy', 'download'],
   setup (_, { emit }) {
     const state = reactive<State>({
       text: '',
       copyLabel: 'copiar',
-      persons: Object.values(Persons)
+      persons: Object.values(Persons),
+      source: Source.iphone
     })
 
     watch(() => state.text, () => {
       emit('tweet-message-change', state.text)
+    })
+
+    watch(() => state.source, () => {
+      emit('tweet-source-change', state.source)
     })
 
     function handleTweetSelect (person: Person): void {
@@ -87,7 +103,8 @@ export default defineComponent({
       handleCopy,
       handleDownload,
       setCurrentTweet,
-      handleTweetSelect
+      handleTweetSelect,
+      Source
     }
   }
 })
