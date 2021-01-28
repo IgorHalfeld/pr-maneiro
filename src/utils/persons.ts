@@ -277,5 +277,11 @@ export const Persons: { [key: string]: Person } = {
     username: 'pabllovittar',
     msg: 'A previsao do tempo diz que seu PR fechoooou 🎶, YUKÊ',
     image: 'https://i.imgur.com/Rzj5M94.jpeg'
+  },
+  baroes: {
+    name: 'Os Barões da Pisadinha',
+    username: 'OsBaroesOfc',
+    msg: 'Só basta você revisar aaa, que eu vou correndo mergear',
+    image: 'https://i.imgur.com/4XwBkXI.jpg'
   }
 }
