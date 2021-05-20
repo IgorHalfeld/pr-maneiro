@@ -13,7 +13,7 @@
 
     <div
       v-if="state.completeIsOpen"
-      class="absolute top-0 left-0 flex flex-col w-full mt-10 bg-white dark:bg-gray-600 rounded-bl-md rounded-br-md animated fadeIn faster"
+      class="absolute top-0 left-0 flex flex-col w-full h-auto max-h-64 overflow-y-auto mt-10 bg-white dark:bg-gray-600 rounded-bl-md rounded-br-md animated fadeIn faster"
     >
       <div
         v-for="(person, index) in state.persons"
