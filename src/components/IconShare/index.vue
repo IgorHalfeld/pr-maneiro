@@ -19,4 +19,10 @@
   width: 22.5px;
   height: 22.5px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    fill: rgb(136, 153, 166);
+  }
+}
 </style>

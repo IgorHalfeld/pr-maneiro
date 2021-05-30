@@ -223,8 +223,31 @@ export default defineComponent({
 .tweet-previous:hover {
   fill: #00a1f9;
 }
+@media (prefers-color-scheme: dark) {
+  .tweet {
+    background-color: #15202b;
+    border-color: rgb(56, 68, 77);
+  }
 
-.dark-mode .tweet-analytics span strong {
-  color: var(--color-text-dark-mode);
+  .header-info {
+    color: rgb(255, 255, 255);
+  }
+
+  .tweet-body {
+    color: rgb(255, 255, 255);
+  }
+
+  .tweet-label {
+    color: rgb(136, 153, 166);
+  }
+
+  .tweet-analytics span {
+    color: rgb(136, 153, 166);
+  }
+
+  .tweet-analytics span strong {
+    color: rgb(255, 255, 255);
+  }
 }
+
 </style>
