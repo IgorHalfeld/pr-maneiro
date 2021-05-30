@@ -7,6 +7,15 @@ export type Person = {
   image: string;
 };
 
+export enum Source {
+  iphone = 'iphone',
+  android = 'android',
+}
+
+export type CurrentTweet = Person & {
+  source: Source;
+};
+
 interface ClipboardItemConstructor {
   new (data: { [mimeType: string]: Blob }): any;
 }

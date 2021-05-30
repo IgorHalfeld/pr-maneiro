@@ -14,6 +14,7 @@
       <toolbar
         class="col-span-12 md:col-span-4"
         @tweet-message-change="handleTweetMessageChange"
+        @tweet-source-change="handleSourceChange"
         @template-change="handleTemplateChange"
         @copy="handleCopy"
         @download="handleDownload"
@@ -32,7 +33,7 @@ import CustomFooter from './components/CustomFooter/index.vue'
 import TweetViewer from './components/TweetViewer/index.vue'
 import Toolbar from './components/Toolbar/index.vue'
 import { useStore, setCurrentTweet, setTweetRef, setSearch } from './store'
-import { Person, Win, GSAP } from './types'
+import { Person, Win, GSAP, Source } from './types'
 import { Persons } from './utils/persons'
 import { buildCopyFn, buildDownloadFn } from './utils/domtoimage'
 
@@ -123,7 +124,8 @@ export default defineComponent({
       animateNext(store.tweetRef, {
         onExitFinish: () => setCurrentTweet({
           ...tweet,
-          msg: store.search.length ? store.search : tweet.msg
+          msg: store.search.length ? store.search : tweet.msg,
+          source: store.currentTweet.source
         })
       })
     }
@@ -134,7 +136,8 @@ export default defineComponent({
       animatePrevious(store.tweetRef, {
         onExitFinish: () => setCurrentTweet({
           ...tweet,
-          msg: store.search.length ? store.search : tweet.msg
+          msg: store.search.length ? store.search : tweet.msg,
+          source: store.currentTweet.source
         })
       })
     }
@@ -176,10 +179,18 @@ export default defineComponent({
       setCurrentTweet(tweet)
     }
 
+    function handleSourceChange (source: Source): void {
+      setCurrentTweet({
+        ...store.currentTweet,
+        source
+      })
+    }
+
     function handleTemplateChange (template: Person): void {
       setCurrentTweet({
         ...template,
-        msg: store.search.length ? store.search : template.msg
+        msg: store.search.length ? store.search : template.msg,
+        source: store.currentTweet.source
       })
     }
 
@@ -194,6 +205,7 @@ export default defineComponent({
     return {
       state: store,
       handleTweetMessageChange,
+      handleSourceChange,
       handleTemplateChange,
       handleTweetUpdate,
       handleDownload,
