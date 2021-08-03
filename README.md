@@ -59,6 +59,7 @@
 - Yudi Tamashiro
 - Zeca Pagodinho
 - Xandão
+- Serjão Berranteiro
 
 ### Como instalar
 

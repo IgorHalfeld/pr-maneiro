@@ -200,8 +200,7 @@ const Persons = {
   carluxo: {
     name: 'Carluxo',
     username: 'CarlosBolsonaro',
-    msg:
-      'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
+    msg: 'Com a vitória no primeiro turno, vamos acabar com o PR e com as ISSUES. É a última vez que eles terão CODE REVIEW.',
     image: 'https://i.imgur.com/vOPLfoV.jpg'
   },
   davyjones: {
@@ -257,7 +256,13 @@ const Persons = {
     username: 'xandaogod',
     msg: 'Relaxa que no fim do PR tem Xandão!',
     image: 'https://i.imgur.com/efshqAn.jpg'
-  }
+  },
+  berranteiro: {
+    name: 'Serjão Berranteiro',
+    username: 'serjaodoberrante',
+    msg: 'Aqui nesse PR tem coragem!',
+    image: 'https://imgur.com/dfxTY56.jpg'
+  },
 }
 
 if (typeof module === 'object') {
