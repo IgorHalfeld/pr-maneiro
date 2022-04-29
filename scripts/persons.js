@@ -263,6 +263,12 @@ const Persons = {
     msg: 'Aqui nesse PR tem coragem!',
     image: 'https://imgur.com/dfxTY56.jpg'
   },
+  elonmusk: {
+    name: 'Elon Musk',
+    username: 'elonmusk',
+    msg: 'This PR is so good I want to buy it!',
+    image: 'https://imgur.com/EJ8kupj.jpg'
+  }
 }
 
 if (typeof module === 'object') {
