@@ -21,6 +21,7 @@
 - Big Smoke
 - Cabo Daciolo
 - Carlos Bolsonaro
+- Casimiro
 - Celso Portiolli
 - Charlie Brown Jr
 - Chaves
@@ -41,6 +42,7 @@
 - Joel Santana
 - Kid Bengala
 - Kléber Bambam
+- Luva de pedreiro
 - Maike da S.W.A.T
 - Marcus Cirillo
 - Mano Brown

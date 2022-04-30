@@ -263,6 +263,18 @@ const Persons = {
     msg: 'Aqui nesse PR tem coragem!',
     image: 'https://imgur.com/dfxTY56.jpg'
   },
+  casimiro: {
+    name: 'Casimiro',
+    username: 'casimiro',
+    msg: 'Ih, meteu essa no PR???',
+    image: 'https://i.imgur.com/QciYtlh.jpg'
+  },
+  luva: {
+    name: 'Luva de Pedreiro',
+    username: 'ocaradaluva',
+    msg: 'Receba!!! É o melhor PR do mundo! Obrigado meu Deus!!!',
+    image: 'https://i.imgur.com/8L87owP.jpg'
+  }
 }
 
 if (typeof module === 'object') {
