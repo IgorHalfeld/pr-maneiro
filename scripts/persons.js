@@ -274,6 +274,12 @@ const Persons = {
     username: 'ocaradaluva',
     msg: 'Receba!!! É o melhor PR do mundo! Obrigado meu Deus!!!',
     image: 'https://i.imgur.com/8L87owP.jpg'
+  },
+  elonmusk: {
+    name: 'Elon Musk',
+    username: 'elonmusk',
+    msg: 'This PR is so good I want to buy it!',
+    image: 'https://i.imgur.com/EJ8kupj.jpg'
   }
 }
 

@@ -31,6 +31,7 @@
 - Davy Jones
 - Dilma Rousseff
 - Donald J. Trump
+- Elon Musk
 - Erick Jacquin
 - Everson Zóio
 - Faustão
