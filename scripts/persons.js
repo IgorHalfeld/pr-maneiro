@@ -280,7 +280,13 @@ const Persons = {
     username: 'elonmusk',
     msg: 'This PR is so good I want to buy it!',
     image: 'https://i.imgur.com/EJ8kupj.jpg'
-  }
+  },
+  nandomoura: {
+    name: 'Nando Moura',
+    username: 'moura_101',
+    msg: 'Esse PR tá TININDOMM',
+    image: 'https://i.imgur.com/4TZCbkT.jpg'
+  },
 }
 
 if (typeof module === 'object') {
