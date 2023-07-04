@@ -63,6 +63,9 @@
 - Zeca Pagodinho
 - Xandão
 - Serjão Berranteiro
+- Thiaguinho
+- Capitão Nascimento
+- Rodrigo Faro
 
 ### Como instalar
 

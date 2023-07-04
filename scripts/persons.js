@@ -287,6 +287,24 @@ const Persons = {
     msg: 'Esse PR tá TININDOMM',
     image: 'https://i.imgur.com/4TZCbkT.jpg'
   },
+  thiaguinho: {
+    name: 'Thiaguinho',
+    username: 'thiaguinho',
+    msg: 'Lê lê lê lê, aprovado!!!',
+    image: 'https://i.imgur.com/ADCBkq7.jpg'
+  },
+  capitaonascimento: {
+    name: 'Capitão Nascimento',
+    username: 'capitãonascimento',
+    msg: 'Não vai subir NADA!!!!',
+    image: 'https://i.imgur.com/hxOu0sy.jpg'
+  },
+  rodrigofaro: {
+    name: 'Rodrigo Faro',
+    username: 'rodrigofato',
+    msg: 'Refatora gatinho, refatora',
+    image: 'https://i.imgur.com/M3dtg6p.png'
+  },
 }
 
 if (typeof module === 'object') {
