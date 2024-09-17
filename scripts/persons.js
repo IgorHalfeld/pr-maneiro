@@ -305,6 +305,12 @@ const Persons = {
     msg: 'Refatora gatinho, refatora',
     image: 'https://i.imgur.com/M3dtg6p.png'
   },
+  jojotodinho: {
+    name: 'Jojo Todynho',
+    username: 'jojotodinho',
+    msg: 'Sustenta tua PR!',
+    image: 'https://imgur.com/a/h9qfvQt.png'
+  },
 }
 
 if (typeof module === 'object') {
