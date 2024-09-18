@@ -66,6 +66,7 @@
 - Thiaguinho
 - Capitão Nascimento
 - Rodrigo Faro
+- Jojo Todynho
 
 ### Como instalar
 
