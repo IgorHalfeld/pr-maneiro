@@ -261,7 +261,7 @@ const Persons = {
     name: 'Serjão Berranteiro',
     username: 'serjaodoberrante',
     msg: 'Aqui nesse PR tem coragem!',
-    image: 'https://imgur.com/dfxTY56.jpg'
+    image: 'https://i.imgur.com/dfxTY56.jpeg'
   },
   casimiro: {
     name: 'Casimiro',
@@ -309,8 +309,8 @@ const Persons = {
     name: 'Jojo Todynho',
     username: 'jojotodinho',
     msg: 'Sustenta tua PR!',
-    image: 'https://imgur.com/a/h9qfvQt.png'
-  },
+    image: 'https://i.imgur.com/L1prmVj.jpeg'
+  }
 }
 
 if (typeof module === 'object') {
