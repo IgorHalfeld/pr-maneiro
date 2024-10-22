@@ -310,6 +310,12 @@ const Persons = {
     username: 'jojotodinho',
     msg: 'Sustenta tua PR!',
     image: 'https://i.imgur.com/L1prmVj.jpeg'
+  },
+  lucianodovalle: {
+    name: 'Luciano do Valle',
+    username: 'lucianodovalle',
+    msg: 'Esse PR foi tão bom quanto pintar com Lukscolor!',
+    image: 'https://i.imgur.com/Cv3taq4.jpeg'
   }
 }
 
