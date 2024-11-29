@@ -67,6 +67,7 @@
 - Capitão Nascimento
 - Rodrigo Faro
 - Jojo Todynho
+- Chill Guy
 
 ### Como instalar
 
