@@ -310,6 +310,12 @@ const Persons = {
     username: 'jojotodinho',
     msg: 'Sustenta tua PR!',
     image: 'https://i.imgur.com/L1prmVj.jpeg'
+  },
+  chillguy: {
+    name: 'Chill Guy',
+    username: 'chillguy',
+    msg: 'O código tá bem ruim, mas tá tudo bem porque somos dois caras tranquilos',
+    image: 'https://i.imgur.com/s2vzuyb.png'
   }
 }
 
