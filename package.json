@@ -4,6 +4,7 @@
   "description": "Faça alguém feliz com um comentário no PR!",
   "main": "main.js",
   "scripts": {
+    "dev": "vite",
     "test": "jest",
     "lint": "eslint --ext .js scripts"
   },
@@ -34,7 +35,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.1.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "vite": "^7.0.6"
   },
   "husky": {
     "hooks": {

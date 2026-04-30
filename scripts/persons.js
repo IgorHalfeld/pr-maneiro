@@ -316,7 +316,13 @@ const Persons = {
     username: 'chillguy',
     msg: 'O código tá bem ruim, mas tá tudo bem porque somos dois caras tranquilos',
     image: 'https://i.imgur.com/s2vzuyb.png'
-  }
+  },
+  megamanx: {
+  name: 'Mega Man X',
+  username: 'megamanx',
+  msg: 'A força não define a justiça, e sim a compaixão.',
+  image: 'https://i.imgur.com/rQfcFiR.png'
+}
 }
 
 if (typeof module === 'object') {
